@@ -1,15 +1,18 @@
 import data from "./data.json"
 import Container from "@mui/material/Container"
+import Typography from "@mui/material/Typography"
 import styled from "@mui/material/styles/styled"
 
 export default function CV() {
 	const headers = Object.keys(data)
 
 	return (
-		<Container sx={{ pt: 4 }}>
-			{headers.map((header, index) => (
-				<Table header={header} key={index} />
-			))}
+		<Container maxWidth={false} sx={{ bgcolor: "background.default", color: "grey.300" }}>
+			<Container sx={{ py: 4 }}>
+				{headers.map((header, index) => (
+					<Table header={header} key={index} />
+				))}
+			</Container>
 		</Container>
 	)
 }
@@ -24,14 +27,20 @@ const Table = styled(({ header, ...others }) => {
 					<th className="indicator">
 						<span></span>
 					</th>
-					<th>{header}</th>
+					<Typography component="th" variant="h6" sx={{ fontWeight: 700 }}>
+						{header}
+					</Typography>
 				</tr>
 			</thead>
 			<tbody>
 				{rows.map((row, index) => (
 					<tr key={index}>
-						<td>{row[0]}</td>
-						<td>{row[1]}</td>
+						<Typography component="td" variant="body1" sx={{ fontWeight: 600 }}>
+							{row[0]}
+						</Typography>
+						<Typography component="td" variant="body2">
+							{row[1]}
+						</Typography>
 					</tr>
 				))}
 			</tbody>
@@ -41,6 +50,9 @@ const Table = styled(({ header, ...others }) => {
 	width: "100%",
 	marginBottom: theme.spacing(5),
 	tableLayout: "fixed",
+	"&:last-of-type": {
+		marginBottom: 0
+	},
 	"& td,th": {
 		padding: `${theme.spacing(0.5)} ${theme.spacing(1)}`,
 		verticalAlign: "top",
@@ -69,7 +81,6 @@ const Table = styled(({ header, ...others }) => {
 		}
 	},
 	"& tbody tr td:first-of-type": {
-		textAlign: "right",
-		fontWeight: 600
+		textAlign: "right"
 	}
 }))

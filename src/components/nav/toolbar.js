@@ -1,14 +1,34 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Container from "@mui/material/Container"
+import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
 import Stack from "@mui/material/Stack"
 import Link from "@mui/material/Link"
 import styled from "@mui/material/styles/styled"
-import { Link as RouterLink } from "react-router-dom"
+import useMediaQuery from "@mui/material/useMediaQuery"
+import useTheme from "@mui/system/useTheme"
+import { NavLink as RouterLink } from "react-router-dom"
 import { Squeeze } from "hamburger-react"
+import disableScroll from "disable-scroll"
 
 export default function Inner() {
 	const [expanded, setExpanded] = useState(false)
+	const theme = useTheme()
+	const up = useMediaQuery(theme.breakpoints.up("sm"))
+
+	useEffect(() => {
+		if (expanded) {
+			disableScroll.on()
+		} else {
+			disableScroll.off()
+		}
+	}, [expanded])
+
+	useEffect(() => {
+		if (up & expanded) {
+			setExpanded(false)
+		}
+	}, [up])
 
 	return (
 		<Container>
@@ -29,22 +49,33 @@ export default function Inner() {
 	)
 }
 
-const Hamburger = styled(({ expanded, setExpanded, ...others }) => (
-	<span {...others}>
+const Hamburger = ({ expanded, setExpanded }) => (
+	<Box component="span" sx={{ display: { xs: "initial", sm: "none" } }}>
 		<Squeeze size={23} toggled={expanded} toggle={setExpanded} />
-	</span>
-))(({ theme }) => ({
-	display: "initial",
-	[theme.breakpoints.up("sm")]: {
-		display: "none"
-	}
-}))
+	</Box>
+)
+
+const NavLink = ({ route, setExpanded }) => (
+	<Link
+		sx={{ color: "grey.200", "&:hover": { color: "primary.light" }, "&.active": { color: "primary.main" } }}
+		onClick={() => setExpanded(false)}
+		align="center"
+		variant="body1"
+		underline="none"
+		component={RouterLink}
+		to={route.link}
+	>
+		{route.name}
+	</Link>
+)
 
 const NavBox = styled(({ expanded, setExpanded, className }) => {
 	const routes = [
 		{ name: "About", link: "/about" },
 		{ name: "CV", link: "/cv" },
-		{ name: "Blog", link: "/blog" }
+		{ name: "Blog", link: "/blog" },
+		{ name: "Gallery", link: "/gallery" },
+		{ name: "Contact", link: "/contact" }
 	]
 	return (
 		<>
@@ -56,16 +87,7 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 				className={expanded ? `${className} expanded` : className}
 			>
 				{routes.map((route, index) => (
-					<Link
-						onClick={() => setExpanded(false)}
-						align="center"
-						underline="none"
-						component={RouterLink}
-						to={route.link}
-						key={index}
-					>
-						{route.name}
-					</Link>
+					<NavLink setExpanded={setExpanded} route={route} key={index} />
 				))}
 			</Stack>
 		</>
@@ -76,7 +98,7 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 	left: 0,
 	height: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`,
 	width: "100%",
-	backgroundColor: theme.palette.background.paper,
+	backgroundColor: theme.palette.common.black,
 	clipPath: "inset(0 0 100% 0)",
 	transition: theme.transitions.create("clip-path", {
 		duration: theme.transitions.duration.complex
