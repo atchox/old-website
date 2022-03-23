@@ -1,8 +1,8 @@
 import { useState } from "react"
+import Container from "@mui/material/Container"
 import Toolbar from "@mui/material/Toolbar"
 import Stack from "@mui/material/Stack"
 import Link from "@mui/material/Link"
-import Typography from "@mui/material/Typography"
 import styled from "@mui/material/styles/styled"
 import { Link as RouterLink } from "react-router-dom"
 import { Squeeze } from "hamburger-react"
@@ -11,14 +11,21 @@ export default function Inner() {
 	const [expanded, setExpanded] = useState(false)
 
 	return (
-		<Toolbar sx={{ justifyContent: "space-between" }}>
-			<RouterLink onClick={() => setExpanded(false)} to="/">
-				<Typography color="white" variant="h5">
+		<Container>
+			<Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
+				<Link
+					underline="none"
+					component={RouterLink}
+					color="white"
+					variant="h5"
+					onClick={() => setExpanded(false)}
+					to="/"
+				>
 					atchox
-				</Typography>
-			</RouterLink>
-			<NavBox expanded={expanded} setExpanded={setExpanded} />
-		</Toolbar>
+				</Link>
+				<NavBox expanded={expanded} setExpanded={setExpanded} />
+			</Toolbar>
+		</Container>
 	)
 }
 
@@ -48,13 +55,14 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 				alignItems="stretch"
 				className={expanded ? `${className} expanded` : className}
 			>
-				{routes.map((route) => (
+				{routes.map((route, index) => (
 					<Link
 						onClick={() => setExpanded(false)}
 						align="center"
 						underline="none"
 						component={RouterLink}
 						to={route.link}
+						key={index}
 					>
 						{route.name}
 					</Link>
