@@ -52,6 +52,7 @@ const Table = styled(({ header, ...others }) => {
 		},
 		"& .indicator": {
 			width: "30%",
+			verticalAlign: "middle",
 			[theme.breakpoints.up("sm")]: {
 				width: "18%"
 			},
@@ -63,7 +64,6 @@ const Table = styled(({ header, ...others }) => {
 				display: "block",
 				height: theme.spacing(0.5),
 				width: "100%",
-				margin: "0 auto",
 				backgroundColor: theme.palette.secondary.main
 			}
 		}
