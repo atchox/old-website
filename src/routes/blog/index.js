@@ -1,3 +1,10 @@
+import { useEffect } from "react"
+import Container from "@mui/material/Container"
+
 export default function Blog() {
-	return <div>Blog is empty(for now)</div>
+	useEffect(() => {
+		document.title = "Blog - atchox"
+	})
+
+	return <Container>Blog is empty(for now)</Container>
 }

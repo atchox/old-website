@@ -1,3 +1,10 @@
+import { useEffect } from "react"
+import Container from "@mui/material/Container"
+
 export default function About() {
-	return <div>Bro, just call me...</div>
+	useEffect(() => {
+		document.title = "About - atchox"
+	})
+
+	return <Container>Bro, just call me...</Container>
 }

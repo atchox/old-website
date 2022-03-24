@@ -1,10 +1,15 @@
-import data from "./data.json"
+import { useEffect } from "react"
 import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
 import styled from "@mui/material/styles/styled"
+import data from "./data.json"
 
 export default function CV() {
 	const headers = Object.keys(data)
+
+	useEffect(() => {
+		document.title = "CV - atchox"
+	})
 
 	return (
 		<Container maxWidth={false} sx={{ bgcolor: "common.black", color: "grey.300" }}>

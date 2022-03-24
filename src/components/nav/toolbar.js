@@ -48,7 +48,12 @@ const Hamburger = ({ expanded, setExpanded }) => (
 
 const NavLink = ({ route, setExpanded }) => (
 	<Link
-		sx={{ color: "grey.200", "&:hover": { color: "primary.light" }, "&.active": { color: "primary.main" } }}
+		sx={{
+			py: { xs: 3, sm: 1 },
+			color: "grey.200",
+			"&:hover": { color: "grey.400" },
+			"&.active": { color: "primary.main" }
+		}}
 		onClick={() => setExpanded(false)}
 		align="center"
 		variant="body1"
@@ -68,11 +73,12 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 		{ name: "Gallery", link: "/gallery" },
 		{ name: "Contact", link: "/contact" }
 	]
+
 	return (
 		<>
 			<Hamburger expanded={expanded} setExpanded={setExpanded} />
 			<Stack
-				spacing={{ xs: 7, sm: 3 }}
+				spacing={{ xs: 1, sm: 3 }}
 				direction={{ xs: "column", sm: "row" }}
 				alignItems="stretch"
 				className={expanded ? `${className} expanded` : className}
