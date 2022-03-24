@@ -19,6 +19,12 @@ const theme = createTheme({
 		fontFamily: ["Raleway", "sans-serif"].join(", "),
 		fontWeightLight: 200,
 		fontWeightMedium: 600
+	},
+	transitions: {
+		duration: {
+			navIn: 1100,
+			navOut: 500
+		}
 	}
 })
 

@@ -1,9 +1,14 @@
 import AppBar from "@mui/material/AppBar"
+import styled from "@mui/material/styles/styled"
 
-export default function Outer({ children }) {
-	return (
-		<AppBar position="fixed" elevation={0} sx={{ bgcolor: "common.black" }}>
-			{children}
-		</AppBar>
-	)
-}
+export default styled(({ className, children }) => (
+	<AppBar position="fixed" elevation={0} className={className}>
+		{children}
+	</AppBar>
+))(({ theme, expanded }) => ({
+	backgroundColor: expanded ? theme.palette.background.default : theme.palette.common.black,
+	transition: theme.transitions.create("background-color", {
+		duration: expanded ? theme.transitions.duration.navIn : theme.transitions.duration.navOut,
+		easing: theme.transitions.easing.easeOut
+	})
+}))

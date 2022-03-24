@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import Container from "@mui/material/Container"
 import Box from "@mui/material/Box"
 import Toolbar from "@mui/material/Toolbar"
@@ -10,9 +10,9 @@ import useTheme from "@mui/system/useTheme"
 import { NavLink as RouterLink } from "react-router-dom"
 import { Squeeze } from "hamburger-react"
 import disableScroll from "disable-scroll"
+import LogoLink from "./logoLink"
 
-export default function Inner() {
-	const [expanded, setExpanded] = useState(false)
+export default function Inner({ expanded, setExpanded }) {
 	const theme = useTheme()
 	const up = useMediaQuery(theme.breakpoints.up("sm"))
 
@@ -33,16 +33,7 @@ export default function Inner() {
 	return (
 		<Container>
 			<Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-				<Link
-					underline="none"
-					component={RouterLink}
-					color="white"
-					variant="h5"
-					onClick={() => setExpanded(false)}
-					to="/"
-				>
-					atchox
-				</Link>
+				<LogoLink setExpanded={setExpanded} />
 				<NavBox expanded={expanded} setExpanded={setExpanded} />
 			</Toolbar>
 		</Container>
@@ -99,18 +90,26 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 	height: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`,
 	width: "100%",
 	backgroundColor: theme.palette.common.black,
+	transition: theme.create,
 	clipPath: "inset(0 0 100% 0)",
-	transition: theme.transitions.create("clip-path", {
-		duration: theme.transitions.duration.complex
+	transition: theme.transitions.create(["clip-path", "background-color"], {
+		duration: theme.transitions.duration.navOut,
+		easing: theme.transitions.easing.easeOut
 	}),
 	paddingTop: theme.spacing(6),
 	"&.expanded": {
-		clipPath: "inset(0)"
+		backgroundColor: theme.palette.background.default,
+		clipPath: "inset(0)",
+		transition: theme.transitions.create(["clip-path", "background-color"], {
+			duration: theme.transitions.duration.navIn,
+			easing: theme.transitions.easing.easeOut
+		})
 	},
 	[theme.breakpoints.up("sm")]: {
 		position: "static",
 		height: "initial",
 		width: "initial",
+		backgroundColor: "transparent",
 		clipPath: "initial",
 		paddingTop: 0
 	}

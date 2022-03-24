@@ -7,7 +7,7 @@ export default function CV() {
 	const headers = Object.keys(data)
 
 	return (
-		<Container maxWidth={false} sx={{ bgcolor: "background.default", color: "grey.300" }}>
+		<Container maxWidth={false} sx={{ bgcolor: "common.black", color: "grey.300" }}>
 			<Container sx={{ py: 4 }}>
 				{headers.map((header, index) => (
 					<Table header={header} key={index} />
@@ -76,7 +76,7 @@ const Table = styled(({ header, ...others }) => {
 				display: "block",
 				height: theme.spacing(0.5),
 				width: "100%",
-				backgroundColor: theme.palette.secondary.main
+				backgroundColor: theme.palette.primary.dark
 			}
 		}
 	},
