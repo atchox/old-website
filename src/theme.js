@@ -21,8 +21,11 @@ const theme = createTheme({
 		fontWeightMedium: 600
 	},
 	transitions: {
+		easing: {
+			nav: "cubic-bezier(0.2, 0.94, 0.36, 1)"
+		},
 		duration: {
-			navIn: 1100,
+			navIn: 1300,
 			navOut: 500
 		}
 	}

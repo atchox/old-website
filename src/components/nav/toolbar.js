@@ -94,7 +94,7 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 	clipPath: "inset(0 0 100% 0)",
 	transition: theme.transitions.create(["clip-path", "background-color"], {
 		duration: theme.transitions.duration.navOut,
-		easing: theme.transitions.easing.easeOut
+		easing: theme.transitions.easing.nav
 	}),
 	paddingTop: theme.spacing(6),
 	"&.expanded": {
@@ -102,7 +102,7 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 		clipPath: "inset(0)",
 		transition: theme.transitions.create(["clip-path", "background-color"], {
 			duration: theme.transitions.duration.navIn,
-			easing: theme.transitions.easing.easeOut
+			easing: theme.transitions.easing.nav
 		})
 	},
 	[theme.breakpoints.up("sm")]: {

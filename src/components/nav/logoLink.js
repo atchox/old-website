@@ -4,7 +4,7 @@ import styled from "@mui/material/styles/styled"
 
 export default styled(({ setExpanded, ...others }) => (
 	<Link underline="none" component={RouterLink} onClick={() => setExpanded(false)} to="/" {...others}>
-		<svg data-name="Layer 1" height="50%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.863 82.974">
+		<svg data-name="Layer 1" height="40%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.863 82.974">
 			<title>atchox logo</title>
 			<g>
 				<path
@@ -85,7 +85,7 @@ export default styled(({ setExpanded, ...others }) => (
 	alignItems: "center",
 	height: theme.spacing(7),
 	"& .cls-1": {
-		fill: theme.palette.primary.dark
+		fill: theme.palette.primary.main
 	},
 	"& .cls-2": {
 		fill: theme.palette.common.white
@@ -94,7 +94,7 @@ export default styled(({ setExpanded, ...others }) => (
 		fill: "transparent"
 	},
 	"&.active .fill-1": {
-		fill: theme.palette.primary.dark
+		fill: theme.palette.primary.main
 	},
 	"&.active .fill-2": {
 		fill: theme.palette.common.white

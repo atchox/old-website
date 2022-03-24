@@ -9,6 +9,6 @@ export default styled(({ className, children }) => (
 	backgroundColor: expanded ? theme.palette.background.default : theme.palette.common.black,
 	transition: theme.transitions.create("background-color", {
 		duration: expanded ? theme.transitions.duration.navIn : theme.transitions.duration.navOut,
-		easing: theme.transitions.easing.easeOut
+		easing: theme.transitions.easing.nav
 	})
 }))
