@@ -1,25 +1,21 @@
 {
 	"Education": [
-		["2020 - Present", "Indian Statistical Institute, Bangalore"],
-		["", "Current CGPA 9.2"],
-		["2018 - 2020", "Delhi Public School Ruby Park, Kolkata"],
-		["", "95.6% in CBSE 2020"],
-		["2016 - 2018", "Indian Statistical Institute, Bangalore"],
-		["", "96.4% in ICSE 2018"]
+		["2020 - Present", "Indian Statistical Institute, Bangalore\nCurrent CGPA 9.2"],
+		["2018 - 2020", "Delhi Public School Ruby Park, Kolkata\n95.6% in CBSE 2020"],
+		["2016 - 2018", "Indian Statistical Institute, Bangalore\n96.4% in ICSE 2018"]
 	],
 	"Fellowship / Scholarship": [
-		["2020 - Present", "KVPY Fellow"],
 		[
-			"",
-			"Awarded the Kishore Vaigyanik Protsahan Yojana scholarship given to top science students by the Govt. of India to motivate interest in research"
+			"2020 - Present",
+			"KVPY Fellow\nAwarded the Kishore Vaigyanik Protsahan Yojana scholarship given to top science students by the Govt. of India to motivate interest in research"
 		]
 	],
 	"Academic Achievements": [
 		["2021", "Currently Ranked within top 5 in BMath programme at ISI Bangalore"],
-		["2020", "Selected in all major science and engineering entrance examinations"],
-		["", "ISI (Ranked 15), CMI (Within top 50, qualified with full scholarship),"],
-		["", "JEE Advanced (Top 1%), JEE Mains (Top 0.5%), WBJEE (Ranked within top 30)"],
-		["", "IISER Admission Test (Top 0.5%)"],
+		[
+			"2020",
+			"Selected in all major science and engineering entrance examinations\nISI (Ranked 15), CMI (Within top 50, qualified with full scholarship),\nJEE Advanced (Top 1%), JEE Mains (Top 0.5%), WBJEE (Ranked within top 30)\nIISER Admission Test (Top 0.5%)"
+		],
 		[
 			"2020",
 			"Awarded the Kishore Vaigyanik Protsahan Yojana scholarship, given to top 1800 students by the Govt. of India to motivate interest in research"
@@ -40,15 +36,13 @@
 		["Others", "ReactJS, NodeJS, ExpressJS, HTML, CSS, Django"]
 	],
 	"Projects": [
-		["2021", "Project for Statistics I Course"],
 		[
-			"",
-			"Worked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
+			"2021",
+			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
 		],
-		["2020 - Present", "LIMIT"],
 		[
-			"",
-			"LIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
+			"2020 - Present",
+			"LIMIT\nLIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
 		]
 	]
 }

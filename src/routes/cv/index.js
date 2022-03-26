@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
 import styled from "@mui/material/styles/styled"
+import FullHeight from "../../components/fullHeight"
 import data from "./data.json"
 
 export default function CV() {
@@ -12,13 +13,13 @@ export default function CV() {
 	})
 
 	return (
-		<Container maxWidth={false} sx={{ bgcolor: "common.black", color: "grey.300" }}>
-			<Container sx={{ py: 4 }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+			<Container sx={{ py: 6 }}>
 				{headers.map((header, index) => (
 					<Table header={header} key={index} />
 				))}
 			</Container>
-		</Container>
+		</FullHeight>
 	)
 }
 
@@ -53,13 +54,14 @@ const Table = styled(({ header, ...others }) => {
 	)
 })(({ theme }) => ({
 	width: "100%",
-	marginBottom: theme.spacing(5),
 	tableLayout: "fixed",
+	whiteSpace: "pre-line",
+	marginBottom: theme.spacing(10),
 	"&:last-of-type": {
 		marginBottom: 0
 	},
 	"& td,th": {
-		padding: `${theme.spacing(0.5)} ${theme.spacing(1)}`,
+		padding: `${theme.spacing(0.8)} ${theme.spacing(1)}`,
 		verticalAlign: "top",
 		wordWrap: "break-word"
 	},
@@ -70,6 +72,7 @@ const Table = styled(({ header, ...others }) => {
 		"& .indicator": {
 			width: "30%",
 			verticalAlign: "middle",
+			paddingLeft: 0,
 			[theme.breakpoints.up("sm")]: {
 				width: "18%"
 			},
