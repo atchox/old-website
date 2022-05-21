@@ -14,7 +14,7 @@ export default function CV() {
 
 	return (
 		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
-			<Container sx={{ py: 6 }}>
+			<Container sx={{ pt: 6 }}>
 				{headers.map((header, index) => (
 					<Table header={header} key={index} />
 				))}

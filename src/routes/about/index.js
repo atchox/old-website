@@ -7,6 +7,7 @@ import { Link as RouterLink } from "react-router-dom"
 import Skipper from "./skipper"
 import FAQ from "./faq"
 import Header from "./header"
+import LetsTalk from "./letsTalk"
 
 export default function About() {
 	useEffect(() => {
@@ -43,7 +44,7 @@ export default function About() {
 					someone would have told me around 4<sup>th</sup> standard that I would end up studying mathematics, I would
 					probably have laughed at them. Uptil 7<sup>th</sup> standard, I was more interested in art, music and sports
 					class with no academic inclination whatsoever. It was only in 8<sup>th</sup> standard that I developed a
-					liking towards mathematics which grew and shrunk in the years to come.
+					liking towards mathematics which would grow and shrink in the years to come.
 					<br />I did my 11<sup>th</sup> and 12<sup>th</sup> standard from Delhi Public School, Ruby Park.
 				</Typography>
 				<Typography variant="body1" sx={{ mb: 6 }}>
@@ -54,9 +55,11 @@ export default function About() {
 						CV page.
 					</Link>
 					<br />I am also interested in designing and building websites. I work on projects to build web applications
-					that are easy to use and simple. I also enjoy playing sports like badminton, swimming and football.
+					that are easy to use and simple. I like working on projects in small teams.
+					<br />I also enjoy playing sports like badminton, swimming and football.
 				</Typography>
-				<FAQ />
+				<FAQ sx={{ mb: 8 }} />
+				<LetsTalk />
 			</Container>
 		</FullHeight>
 	)

@@ -11,7 +11,7 @@ import Header from "./header"
 
 export default function FAQ(props) {
 	return (
-		<Box component={Element} name="faq" sx={{ pb: 4 }}>
+		<Box component={Element} name="faq" {...props}>
 			<Header>FAQ</Header>
 			<Accordion>
 				<Summary>What's it like being that tall?</Summary>
