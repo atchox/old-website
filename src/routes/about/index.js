@@ -6,6 +6,7 @@ import Link from "@mui/material/Link"
 import { Link as RouterLink } from "react-router-dom"
 import Skipper from "./skipper"
 import FAQ from "./faq"
+import Header from "./header"
 
 export default function About() {
 	useEffect(() => {
@@ -16,9 +17,7 @@ export default function About() {
 		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
 			<Container>
 				<Skipper />
-				<Typography variant="h3" sx={{ mb: 2 }}>
-					The Dough
-				</Typography>
+				<Header>The Dough</Header>
 				<Typography variant="body1" sx={{ mb: 4 }}>
 					I was born on a Sunday afternoon in 2002 in a small town in Birbhum, West Bengal known as Bolpur. I grew up in
 					a very middle class household. My dad works in the IT industry which is probably the most boring description
@@ -35,9 +34,9 @@ export default function About() {
 					always has a plan C. He is the guy who decided my first name. Funny story here - when I asked him years later
 					why he chose that name, he said, "I guessed that if your name started with A, you would usually be around the
 					top of name lists." My mom, Pampa, is the glue of the family. When I say family, I mean our whole extended
-					family. She's an expert of interpersonal relationships and one of the smartest and kindest women I know. My
+					family. She's an expert of interpersonal relationships and one of the smartest and kindest person I know. My
 					dad believes in opulence and my mom believes in staying as grounded as possible. So they balance each other
-					out very well.
+					out pretty well.
 				</Typography>
 				<Typography variant="body1" sx={{ mb: 4 }}>
 					I did most of my schooling in Kolkata. I studied at Garden High School till 10<sup>th</sup> standard. If
@@ -47,7 +46,7 @@ export default function About() {
 					liking towards mathematics which grew and shrunk in the years to come.
 					<br />I did my 11<sup>th</sup> and 12<sup>th</sup> standard from Delhi Public School, Ruby Park.
 				</Typography>
-				<Typography variant="body1" sx={{ mb: 4 }}>
+				<Typography variant="body1" sx={{ mb: 6 }}>
 					Currently, I am a third year undergraduate student of mathematics at Indian Statistical Institute, Bangalore
 					with an interest in probability, statistics and applied mathematics in general. I wish to apply what I learn
 					in class to solve real world problems. You can find out more about my academic work on my{" "}
@@ -55,7 +54,7 @@ export default function About() {
 						CV page.
 					</Link>
 					<br />I am also interested in designing and building websites. I work on projects to build web applications
-					that are easy to use and beautiful. I enjoy playing sports like badminton, swimming and football.
+					that are easy to use and simple. I also enjoy playing sports like badminton, swimming and football.
 				</Typography>
 				<FAQ />
 			</Container>

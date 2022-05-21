@@ -1,6 +1,7 @@
+import responsiveFontSizes from "@mui/material/styles/responsiveFontSizes"
 import createTheme from "@mui/material/styles/createTheme"
 
-const theme = createTheme({
+let theme = createTheme({
 	palette: {
 		mode: "dark",
 		primary: {
@@ -17,8 +18,7 @@ const theme = createTheme({
 	},
 	typography: {
 		fontFamily: ["Raleway", "sans-serif"].join(", "),
-		fontWeightLight: 200,
-		fontWeightMedium: 600
+		fontWeightLight: 200
 	},
 	transitions: {
 		easing: {
@@ -30,5 +30,7 @@ const theme = createTheme({
 		}
 	}
 })
+
+theme = responsiveFontSizes(theme)
 
 export default theme

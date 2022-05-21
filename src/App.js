@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Footer from "./components/footer"
 import Nav from "./components/nav"
 import PreLoader from "./components/preloader"
 const Home = lazy(() => import("./routes/home"))
@@ -63,6 +64,7 @@ export default function App() {
 					}
 				/>
 			</Routes>
+			<Footer />
 		</BrowserRouter>
 	)
 }

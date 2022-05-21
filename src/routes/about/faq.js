@@ -1,30 +1,88 @@
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
-import { Element } from "react-scroll"
 import Accordion from "@mui/material/Accordion"
-import AccordionDetails from "@mui/material/AccordionDetails"
+import Details from "@mui/material/AccordionDetails"
 import AccordionSummary from "@mui/material/AccordionSummary"
+import { Element } from "react-scroll"
+import List from "@mui/material/List"
+import ListItem from "@mui/material/ListItem"
+import ListItemText from "@mui/material/ListItemText"
+import Header from "./header"
 
 export default function FAQ(props) {
 	return (
 		<Box component={Element} name="faq" sx={{ pb: 4 }}>
-			<Typography variant="h3" sx={{ mb: 2 }}>
-				FAQ
-			</Typography>
+			<Header>FAQ</Header>
 			<Accordion>
 				<Summary>What's it like being that tall?</Summary>
-				<Details>Great! Except when you go shopping for pants.</Details>
+				<Details>
+					<Typography variant="body1">Great! Except when you go shopping for pants.</Typography>
+				</Details>
 			</Accordion>
 			<Accordion>
 				<Summary>What do plan to do when you grow up?</Summary>
 				<Details>
-					<strong>*stares blankly without expression*</strong>
+					<Typography variant="body1">
+						<strong>*stares blankly without expression*</strong>
+					</Typography>
 				</Details>
 			</Accordion>
 			<Accordion>
-				<Summary>What's your favourite TV show?</Summary>
+				<Summary>Your favourite TV shows?</Summary>
 				<Details>
-					<strong>Sherlock.</strong>
+					<List>
+						<ListItem>
+							<ListItemText primary="Sherlock" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="The Newsroom" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Mr. Robot" />
+						</ListItem>
+					</List>
+					<Typography variant="body1">These are just 3 names out of a list of 50.</Typography>
+				</Details>
+			</Accordion>
+			<Accordion>
+				<Summary>Your favourite music genre?</Summary>
+				<Details>
+					<Typography variant="body1">
+						Don't really have one. It keeps changing with the seasons. Soul, jazz, Bollywood, rock, rap, hiphop, are
+						some of my favourites though.
+					</Typography>
+				</Details>
+			</Accordion>
+			<Accordion>
+				<Summary>Top 3 favourite actors?</Summary>
+				<Details>
+					<List>
+						<ListItem>
+							<ListItemText primary="Tom Hanks" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Brad Pitt" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Matt Damon" />
+						</ListItem>
+					</List>
+				</Details>
+			</Accordion>
+			<Accordion>
+				<Summary>Top 3 favourite actresses?</Summary>
+				<Details>
+					<List>
+						<ListItem>
+							<ListItemText primary="Meryl Streep" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Anne Hathaway" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Cate Blanchett" />
+						</ListItem>
+					</List>
 				</Details>
 			</Accordion>
 		</Box>
@@ -33,11 +91,6 @@ export default function FAQ(props) {
 
 const Summary = ({ children }) => (
 	<AccordionSummary>
-		<Typography variant="body1">{children}</Typography>
-	</AccordionSummary>
-)
-const Details = ({ children }) => (
-	<AccordionDetails>
 		<Typography variant="body2">{children}</Typography>
-	</AccordionDetails>
+	</AccordionSummary>
 )
