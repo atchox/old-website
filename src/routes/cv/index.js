@@ -3,7 +3,7 @@ import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
 import styled from "@mui/material/styles/styled"
 import FullHeight from "../../components/fullHeight"
-import data from "./data.json"
+import data from "./data"
 
 export default function CV() {
 	const headers = Object.keys(data)
@@ -44,7 +44,7 @@ const Table = styled(({ header, ...others }) => {
 						<Typography component="td" variant="body1" sx={{ fontWeight: 600 }}>
 							{row[0]}
 						</Typography>
-						<Typography component="td" variant="body2">
+						<Typography component="td" variant="body1">
 							{row[1]}
 						</Typography>
 					</tr>

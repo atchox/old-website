@@ -1,5 +1,9 @@
-{
-	"Education": [
+import Link from "@mui/material/Link"
+import Box from "@mui/material/Box"
+import Icon from "../../components/externalLinkIcon"
+
+const data = {
+	Education: [
 		["2020 - Present", "Indian Statistical Institute, Bangalore\nCurrent CGPA 9.2"],
 		["2018 - 2020", "Delhi Public School Ruby Park, Kolkata\n95.6% in CBSE 2020"],
 		["2016 - 2018", "Indian Statistical Institute, Bangalore\n96.4% in ICSE 2018"]
@@ -30,12 +34,31 @@
 		],
 		["2015", "Secured highest marks in Mathematics in nationally held ASSET Talent Search Examination"]
 	],
+	"Other Courses": [
+		[
+			"2022",
+			<>
+				{"MITx 6.002.1x: Circuits and Electronics 1\nBasic Circuit Analysis"}
+				<br />
+				<Link
+					target="_blank"
+					underline="hover"
+					href="https://courses.edx.org/certificates/0bd617aa481b4ac4a7fc372481a4ad0c"
+				>
+					Certificate{" "}
+					<sup>
+						<Icon />
+					</sup>
+				</Link>
+			</>
+		]
+	],
 	"Software Skills": [
 		["Languages", "C, C++, Python, JavaScript, R, LaTeX"],
 		["Databases", "MongoDB, MySQL"],
 		["Others", "ReactJS, NodeJS, ExpressJS, HTML, CSS, Django"]
 	],
-	"Projects": [
+	Projects: [
 		[
 			"2021",
 			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
@@ -46,3 +69,5 @@
 		]
 	]
 }
+
+export default data

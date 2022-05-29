@@ -7,7 +7,7 @@ export default function Footer() {
 		<Box sx={{ bgcolor: "common.black", color: "grey.500" }}>
 			<Container sx={{ pt: 6, pb: 2 }}>
 				<Typography align="center" variant="subtitle2" sx={{ fontSize: { xs: "0.5em", sm: "0.7em", md: "0.9em" } }}>
-					&copy; 2022{" "}
+					&copy; {`${new Date().getFullYear()} `}
 					<Box component="span" sx={{ color: "primary.main", font: "inherit" }}>
 						Atreya Choudhury
 					</Box>{" "}
