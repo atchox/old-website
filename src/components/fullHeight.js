@@ -7,14 +7,15 @@ function FullHeight({ reduceBy, minMode, children, sx, ...others }) {
 
 	const base = theme.breakpoints.up("sm")
 	const baseMedia = useMediaQuery(base)
-	const next = `${theme.breakpoints.up("xs")} and (orientation: landscape)`
-	const nextMedia = useMediaQuery(next)
+	const next1 = theme.breakpoints.up("xs")
+	const next2 = "(orientation: landscape)"
+	const nextMedia = useMediaQuery(`${next1} and ${next2}`)
 	let height
 
 	if (baseMedia) {
 		height = theme.mixins.toolbar[base].minHeight
 	} else if (nextMedia) {
-		height = theme.mixins.toolbar[next].minHeight
+		height = theme.mixins.toolbar[next1][`@media ${next2}`].minHeight
 	} else {
 		height = theme.mixins.toolbar.minHeight
 	}

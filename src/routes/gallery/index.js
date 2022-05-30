@@ -9,7 +9,7 @@ export default function Home() {
 	})
 
 	return (
-		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container sx={{ pt: 6 }}>
 				<Typography variant="body1">Will take me a while to organise the mess that is my gallery lol {":)"}</Typography>
 			</Container>

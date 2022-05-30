@@ -28,7 +28,7 @@ export default function Inner({ expanded, setExpanded }) {
 		if (up & expanded) {
 			setExpanded(false)
 		}
-	}, [up])
+	}, [up, expanded, setExpanded])
 
 	return (
 		<Container>
@@ -96,7 +96,6 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 	height: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`,
 	width: "100%",
 	backgroundColor: theme.palette.common.black,
-	transition: theme.create,
 	clipPath: "inset(0 0 100% 0)",
 	transition: theme.transitions.create(["clip-path", "background-color"], {
 		duration: theme.transitions.duration.navOut,

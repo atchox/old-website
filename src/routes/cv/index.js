@@ -13,7 +13,7 @@ export default function CV() {
 	})
 
 	return (
-		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container sx={{ pt: 6 }}>
 				{headers.map((header, index) => (
 					<Table header={header} key={index} />
@@ -41,7 +41,7 @@ const Table = styled(({ header, ...others }) => {
 			<tbody>
 				{rows.map((row, index) => (
 					<tr key={index}>
-						<Typography component="td" variant="body1" sx={{ fontWeight: 600 }}>
+						<Typography component="td" variant="body1">
 							{row[0]}
 						</Typography>
 						<Typography component="td" variant="body1">
@@ -66,6 +66,7 @@ const Table = styled(({ header, ...others }) => {
 		wordWrap: "break-word"
 	},
 	"& thead": {
+		color: theme.palette.text.secondary,
 		"& tr th:last-of-type": {
 			textAlign: "left"
 		},
@@ -89,6 +90,8 @@ const Table = styled(({ header, ...others }) => {
 		}
 	},
 	"& tbody tr td:first-of-type": {
+		fontWeight: 600,
+		color: theme.palette.grey[600],
 		textAlign: "right"
 	}
 }))

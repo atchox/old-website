@@ -13,12 +13,12 @@ export default function Home() {
 	})
 
 	return (
-		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container sx={{ pt: 6 }}>
 				<Stack spacing={{ xs: 6, md: 2 }} direction={{ xs: "column", md: "row" }}>
 					<Box sx={{ p: { xs: 0, md: 2 } }}>
 						<Writing sx={{ pb: 2 }}>I would love to hear from you {":)"}</Writing>
-						<Typography sx={{ mb: 2 }} variant="h3">
+						<Typography sx={{ mb: 2, color: "text.secondary" }} variant="h3">
 							Contact Me
 						</Typography>
 						<Typography variant="body1">

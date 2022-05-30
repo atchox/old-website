@@ -1,24 +1,151 @@
-import Link from "@mui/material/Link"
 import Box from "@mui/material/Box"
-import Icon from "../../components/externalLinkIcon"
+import DefTooltip from "@mui/material/Tooltip"
+import ExternalLink from "../../components/externalLink"
+
+const Tooltip = props => (
+	<DefTooltip
+		arrow
+		enterDelay={0}
+		leaveDelay={500}
+		enterNextDelay={200}
+		enterTouchDelay={100}
+		leaveTouchDelay={500}
+		{...props}
+	/>
+)
 
 const data = {
 	Education: [
-		["2020 - Present", "Indian Statistical Institute, Bangalore\nCurrent CGPA 9.2"],
-		["2018 - 2020", "Delhi Public School Ruby Park, Kolkata\n95.6% in CBSE 2020"],
-		["2016 - 2018", "Indian Statistical Institute, Bangalore\n96.4% in ICSE 2018"]
+		[
+			"2020 - Present",
+			<>
+				<Tooltip
+					title={
+						<>
+							{"ISIBC"}
+							<br />
+							<ExternalLink href="https://www.isibang.ac.in">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">Indian Statistical Institute, Bangalore</Box>
+				</Tooltip>
+				<br />
+				{"Current CGPA 9.2"}
+			</>
+		],
+		[
+			"2018 - 2020",
+			<>
+				<Tooltip
+					title={
+						<>
+							{"DPSRPK"}
+							<br />
+							<ExternalLink href="https://www.dpskolkata.com">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">Delhi Public School Ruby Park, Kolkata</Box>
+				</Tooltip>
+				<br />
+				{"95.6% in CBSE 2020"}
+			</>
+		],
+		[
+			"2016 - 2018",
+			<>
+				<Tooltip
+					title={
+						<>
+							{"GHS"}
+							<br />
+							<ExternalLink href="https://gardenhighschool.in">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">Garden High School, Kolkata</Box>
+				</Tooltip>
+				<br />
+				{"96.4% in ICSE 2018"}
+			</>
+		]
 	],
 	"Fellowship / Scholarship": [
 		[
 			"2020 - Present",
-			"KVPY Fellow\nAwarded the Kishore Vaigyanik Protsahan Yojana scholarship given to top science students by the Govt. of India to motivate interest in research"
+			<>
+				<Tooltip title="Kishore Vaigyanik Protsahan Yojana">
+					<Box component="span">KVPY</Box>
+				</Tooltip>
+				{
+					" Fellow\nAwarded the Kishore Vaigyanik Protsahan Yojana scholarship given to top science students by the Govt. of India to motivate interest in research"
+				}
+			</>
 		]
 	],
 	"Academic Achievements": [
-		["2022", "Selected for the Visiting Students' Research Programme(VSRP) at TIFR-Mumbai"],
+		[
+			"2022",
+			<>
+				{"Selected for the "}
+				<Tooltip
+					title={
+						<>
+							{"VSRP"}
+							<br />
+							<ExternalLink href="https://www.tifr.res.in/~vsrp">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">Visiting Students' Research Programme</Box>
+				</Tooltip>
+				{" at "}
+				<Tooltip
+					title={
+						<>
+							{"Tata Institute of Fundamental Research"}
+							<br />
+							<ExternalLink href="https://main.tifr.res.in">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">TIFR-Mumbai</Box>
+				</Tooltip>
+			</>
+		],
 		[
 			"2020",
-			"Selected in all major science and engineering entrance examinations\nISI (Ranked 15), CMI (Within top 50, qualified with full scholarship),\nJEE Advanced (Top 1%), JEE Mains (Top 0.5%), WBJEE (Ranked within top 30)\nIISER Admission Test (Top 0.5%)"
+			<>
+				{"Selected in all major science and engineering entrance examinations"}
+				<br />
+				<Tooltip title="Indian Statistical Institute">
+					<Box component="span">ISI</Box>
+				</Tooltip>
+				{" (Ranked 15), "}
+				<Tooltip title="Chennai Mathematical Institute">
+					<Box component="span">CMI</Box>
+				</Tooltip>
+				{" (Within top 50, qualified with full scholarship),"}
+				<br />
+				<Tooltip title="Joint Entrance Examination - Advanced">
+					<Box component="span">JEE Advanced</Box>
+				</Tooltip>
+				{" (Top 1%), "}
+				<Tooltip title="Joint Entrance Examination - Mains">
+					<Box component="span">JEE Mains</Box>
+				</Tooltip>
+				{" (Top 0.5%), "}
+				<Tooltip title="West Bengal Joint Entrance Examination">
+					<Box component="span">WBJEE</Box>
+				</Tooltip>
+				{" (Ranked within top 30)"}
+				<br />
+				<Tooltip title="Indian Institute of Science and Education Research">
+					<Box component="span">IISER</Box>
+				</Tooltip>
+				{" Admission Test (Top 0.5%)"}
+			</>
 		],
 		[
 			"2020",
@@ -40,16 +167,11 @@ const data = {
 			<>
 				{"MITx 6.002.1x: Circuits and Electronics 1\nBasic Circuit Analysis"}
 				<br />
-				<Link
-					target="_blank"
-					underline="hover"
-					href="https://courses.edx.org/certificates/0bd617aa481b4ac4a7fc372481a4ad0c"
-				>
-					Certificate{" "}
-					<sup>
-						<Icon />
-					</sup>
-				</Link>
+				<Tooltip title="6.002.1x Certificate">
+					<ExternalLink href="https://courses.edx.org/certificates/0bd617aa481b4ac4a7fc372481a4ad0c">
+						Certificate
+					</ExternalLink>
+				</Tooltip>
 			</>
 		]
 	],
@@ -65,7 +187,23 @@ const data = {
 		],
 		[
 			"2020 - Present",
-			"LIMIT\nLIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
+			<>
+				<Tooltip
+					title={
+						<>
+							{"LIMIT"}
+							<br />
+							<ExternalLink href="https://www.limitisi.in">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">LIMIT</Box>
+				</Tooltip>
+				<br />
+				{
+					"LIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
+				}
+			</>
 		]
 	]
 }

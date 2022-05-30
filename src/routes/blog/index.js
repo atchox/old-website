@@ -9,7 +9,7 @@ export default function Blog() {
 	})
 
 	return (
-		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container sx={{ pt: 6 }}>
 				<Typography variant="body1">
 					Blog is empty

@@ -15,7 +15,7 @@ export default function About() {
 	})
 
 	return (
-		<FullHeight minMode sx={{ bgcolor: "common.black", color: "grey.300" }}>
+		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container>
 				<Skipper />
 				<Header>The Dough</Header>
