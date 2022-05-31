@@ -3,7 +3,7 @@ import Writing from "../../components/writing"
 import DownArrow from "@mui/icons-material/ArrowDownwardRounded"
 import Stack from "@mui/material/Stack"
 import { scroller } from "react-scroll"
-import styled from "@mui/system/styled"
+import breathe from "../../components/breatheKeyframes"
 
 export default function Skipper() {
 	return (
@@ -14,8 +14,9 @@ export default function Skipper() {
 	)
 }
 
-const ArrowButton = styled((props) => (
+const ArrowButton = props => (
 	<IconButton
+		sx={{ animation: `3s linear 0s infinite ${breathe}` }}
 		{...props}
 		onClick={() => scroller.scrollTo("faq", { smooth: true })}
 		to="faq"
@@ -24,20 +25,4 @@ const ArrowButton = styled((props) => (
 	>
 		<DownArrow sx={{ fontSize: 30 }} />
 	</IconButton>
-))(() => ({
-	animation: "3s linear 0s infinite breathe",
-	"@keyframes breathe": {
-		"0%": {
-			transform: "scale(1)"
-		},
-		"30%": {
-			transform: "scale(1.4)"
-		},
-		"70%": {
-			transform: "scale(1)"
-		},
-		"100%": {
-			transform: "scale(1)"
-		}
-	}
-}))
+)
