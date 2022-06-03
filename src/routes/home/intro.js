@@ -19,25 +19,27 @@ export default function Intro() {
 			>
 				<Hey />
 				<Greet />
-				<ScrollDown />
+				{/* <ScrollDown /> */}
 			</Container>
 		</FullHeight>
 	)
 }
 
-const appear = keyframes`
+const heyAnim = keyframes`
   0% {
     opacity: 0;
+		transform: scale(0.95);
   }
   100% {
     opacity: 1;
+		transform: scale(1);
   }
 `
 
 const Hey = props => (
 	<Writing
 		align="center"
-		sx={{ animation: `1s ease-in 0.2s normal both running ${appear}`, mb: 2 }}
+		sx={{ animation: `1s ease-in 0.4s normal both running ${heyAnim}`, mb: 2 }}
 		variant="h3"
 		{...props}
 	>
@@ -45,10 +47,21 @@ const Hey = props => (
 	</Writing>
 )
 
+const greetAnim = keyframes`
+	0% {
+		opacity: 0;
+		transform: scale(0.95) translate(0, 8px);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translate(0, 0);
+	}
+`
+
 const Greet = props => (
 	<Writing
 		align="center"
-		sx={{ animation: `1s ease-in 1.2s normal both running ${appear}`, mb: 2 }}
+		sx={{ animation: `1s ease-in 1.4s normal both running ${greetAnim}`, mb: 2 }}
 		variant="h5"
 		{...props}
 	>
@@ -58,10 +71,25 @@ const Greet = props => (
 	</Writing>
 )
 
+const scrollDownAnim = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
 const ScrollDown = props => (
 	<Writing
 		align="center"
-		sx={{ position: "absolute", bottom: 0, animation: `1s ease-in 5s normal both running ${appear}`, mb: 2 }}
+		sx={{
+			color: "grey.400",
+			position: "absolute",
+			bottom: 0,
+			animation: `1s ease-in 5s normal both running ${scrollDownAnim}`,
+			mb: 2
+		}}
 		variant="h6"
 		{...props}
 	>

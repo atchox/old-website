@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Container from "@mui/material/Container"
-import FullHeight from "../../components/fullHeight"
 import Typography from "@mui/material/Typography"
+import FullHeight from "../../components/fullHeight"
 
 export default function Home() {
 	useEffect(() => {
