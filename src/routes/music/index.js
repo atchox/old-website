@@ -15,10 +15,13 @@ export default function Home() {
 	})
 
 	useEffect(() => {
-		axios.get("/music").then(data => {
-			data = data.data
-			setTracks(data)
-		})
+		axios
+			.get("/music")
+			.then(data => {
+				data = data.data
+				setTracks(data)
+			})
+			.catch(error => console.error(error))
 	}, [])
 
 	return (

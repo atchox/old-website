@@ -1,7 +1,5 @@
-import { create } from "axios"
+import axios from "axios"
 
-const axios = create({
+export default axios.create({
 	baseURL: process.env.REACT_APP_API_ROUTE
 })
-
-export default axios

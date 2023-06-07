@@ -10,10 +10,13 @@ export default function Footer() {
 	const [track, setTrack] = useState("")
 
 	useEffect(() => {
-		axios.get("/music/random").then(data => {
-			data = data.data
-			setTrack(data.tid)
-		})
+		axios
+			.get("/music/random")
+			.then(data => {
+				data = data.data
+				setTrack(data.tid)
+			})
+			.catch(error => console.error(error))
 	}, [])
 
 	return (

@@ -17,7 +17,25 @@ const Tooltip = props => (
 const data = {
 	Education: [
 		[
-			"2020 - Present",
+			"2023 - Present",
+			<>
+				<Tooltip
+					title={
+						<>
+							{"ETHZ"}
+							<br />
+							<ExternalLink href="https://www.ethz.ch">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">ETH Zürich</Box>
+				</Tooltip>
+				<br />
+				{"Starting in September 2023"}
+			</>
+		],
+		[
+			"2020 - 2023",
 			<>
 				<Tooltip
 					title={
@@ -31,7 +49,7 @@ const data = {
 					<Box component="span">Indian Statistical Institute, Bangalore</Box>
 				</Tooltip>
 				<br />
-				{"Current CGPA 9.2"}
+				{"Graduated First Division with Distinction"}
 			</>
 		],
 		[
