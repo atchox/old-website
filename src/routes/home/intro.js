@@ -1,6 +1,5 @@
 import Container from "@mui/material/Container"
 import FullHeight from "../../components/fullHeight"
-import DownArrow from "@mui/icons-material/ArrowDownwardRounded"
 import { keyframes } from "@mui/system"
 import Writing from "../../components/writing"
 
@@ -19,7 +18,6 @@ export default function Intro() {
 			>
 				<Hey />
 				<Greet />
-				{/* <ScrollDown /> */}
 			</Container>
 		</FullHeight>
 	)
@@ -68,33 +66,5 @@ const Greet = props => (
 		nice to meet you
 		<br />
 		feel free to look around
-	</Writing>
-)
-
-const scrollDownAnim = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`
-
-const ScrollDown = props => (
-	<Writing
-		align="center"
-		sx={{
-			color: "grey.400",
-			position: "absolute",
-			bottom: 0,
-			animation: `1s ease-in 5s normal both running ${scrollDownAnim}`,
-			mb: 2
-		}}
-		variant="h6"
-		{...props}
-	>
-		keep scrolling
-		<br />
-		<DownArrow sx={{ fontSize: { xs: 20, sm: 30 } }} />
 	</Writing>
 )

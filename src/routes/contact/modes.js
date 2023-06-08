@@ -7,9 +7,13 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import ListItemText from "@mui/material/ListItemText"
 import Message from "./message"
+import ExternalLink from "../../components/externalLink"
 
 export default function Modes({ sx }) {
 	const [tab, setTab] = useState(0)
+	const [name, setName] = useState("")
+	const [email, setEmail] = useState("")
+	const [message, setMessage] = useState("")
 
 	const tabChange = (event, value) => setTab(value)
 
@@ -20,15 +24,15 @@ export default function Modes({ sx }) {
 				<Tab label="Social" />
 			</Tabs>
 			<Box sx={{ pt: 4 }}>
-				<Viewer tab={tab} />
+				<Viewer n={name} sN={setName} e={email} sE={setEmail} m={message} sM={setMessage} tab={tab} />
 			</Box>
 		</Paper>
 	)
 }
 
-const Viewer = ({ tab }) => {
+const Viewer = ({ n, sN, e, sE, m, sM, tab }) => {
 	if (tab === 0) {
-		return <Message />
+		return <Message name={n} setName={sN} email={e} setEmail={sE} message={m} setMessage={sM} />
 	} else if (tab === 1) {
 		return (
 			<List>
@@ -36,10 +40,16 @@ const Viewer = ({ tab }) => {
 					<ListItemText primary="atchox#2032" secondary="Discord" />
 				</ListItem>
 				<ListItem>
-					<ListItemText primary="atchox" secondary="GitHub" />
+					<ListItemText
+						primary={<ExternalLink href="https://www.github.com/atchox">atchox</ExternalLink>}
+						secondary="GitHub"
+					/>
 				</ListItem>
 				<ListItem>
-					<ListItemText primary="_atchox_" secondary="Instagram" />
+					<ListItemText
+						primary={<ExternalLink href="https://www.instagram.com/_atchox_">_atchox_</ExternalLink>}
+						secondary="Instagram"
+					/>
 				</ListItem>
 			</List>
 		)

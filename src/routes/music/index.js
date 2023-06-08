@@ -39,7 +39,7 @@ export default function Home() {
 									sx={{ borderRadius: 3, width: { xs: "80%", sm: "40%" }, height: "80px", mb: 2 }}
 									src={`https://open.spotify.com/embed/track/${track.tid}?utm_source=generator`}
 									frameBorder="0"
-									allowfullscreen=""
+									allowFullScreen=""
 									allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 								/>
 							</ListItem>
