@@ -41,7 +41,7 @@ const Hey = props => (
 		variant="h3"
 		{...props}
 	>
-		hey {":)"}
+		hey, I'm Atreya {":)"}
 	</Writing>
 )
 

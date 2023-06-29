@@ -37,7 +37,7 @@ const Viewer = ({ n, sN, e, sE, m, sM, tab }) => {
 		return (
 			<List>
 				<ListItem>
-					<ListItemText primary="atchox#2032" secondary="Discord" />
+					<ListItemText primary="atchox" secondary="Discord" />
 				</ListItem>
 				<ListItem>
 					<ListItemText
