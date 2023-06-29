@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { createBrowserRouter, ScrollRestoration, RouterProvider, Routes, Route } from "react-router-dom"
 import Footer from "./components/footer"
 import Nav from "./components/nav"
 import PreLoader from "./components/preloader"
@@ -12,10 +12,17 @@ const Contact = lazy(() => import("./routes/contact"))
 const Music = lazy(() => import("./routes/music"))
 const NoMatch = lazy(() => import("./routes/noMatch"))
 
+const router = createBrowserRouter([{ path: "*", Component: Root }])
+
 export default function App() {
+	return <RouterProvider router={router} />
+}
+
+function Root() {
 	return (
-		<BrowserRouter>
+		<>
 			<Nav />
+			<ScrollRestoration />
 			<Routes>
 				<Route element={<Footer />}>
 					<Route
@@ -85,6 +92,6 @@ export default function App() {
 				</Route>
 			</Routes>
 			{/* <Footer /> */}
-		</BrowserRouter>
+		</>
 	)
 }
