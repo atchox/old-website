@@ -24,9 +24,9 @@ export default function MiniAbout() {
 			<Container sx={{ pt: 8 }}>
 				<Image
 					src={atreya}
-					alt="Portrait of Atreya at Singapore home"
-					title="Me at my Singapore home"
-					date="May 2022"
+					alt="Portrait of Atreya at Stoos"
+					title="Me at Stoos"
+					date="October 2023"
 					width={{ xs: "80%", sm: "50%", md: "40%" }}
 					sx={{ position: "relative", zIndex: 2 }}
 				/>
