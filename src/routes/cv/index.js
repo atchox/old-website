@@ -33,7 +33,7 @@ const Table = styled(({ header, ...others }) => {
 					<th className="indicator">
 						<span></span>
 					</th>
-					<Typography component="th" variant="h6" sx={{ fontWeight: 700 }}>
+					<Typography component="th" variant="h4" sx={{ fontWeight: 700 }}>
 						{header}
 					</Typography>
 				</tr>
