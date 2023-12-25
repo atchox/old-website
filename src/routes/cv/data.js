@@ -31,7 +31,7 @@ const data = {
 					<Box component="span">ETH Zürich</Box>
 				</Tooltip>
 				<br />
-				{"Starting in September 2023"}
+				{"Started in September 2023"}
 			</>
 		],
 		[

@@ -63,8 +63,6 @@ const Greet = props => (
 		variant="h5"
 		{...props}
 	>
-		nice to meet you
-		<br />
-		feel free to look around
+		pleasure to meet you
 	</Writing>
 )

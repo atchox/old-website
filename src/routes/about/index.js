@@ -22,28 +22,25 @@ export default function About() {
 				<Typography variant="body1" sx={{ mb: 4 }}>
 					I was born on a Sunday afternoon in 2002 in a small town in Birbhum, West Bengal known as Bolpur. I grew up in
 					a very middle class household. My mom stays at home, runs the family and does her best to keep me straying
-					away from the straight and narrow. My dad works in the IT industry which is probably the most boring
-					description his job that I can come up with.
+					away from the straight and narrow. My dad works in the IT industry and is the most methodical person I have
+					ever met.
 					<br />
 					I have lived in Kolkata for most of my life but have been around a fair bit on account on my dads job. We
-					spent a few years in USA when I was very young and a few in Singapore in recent years. Currently, I am on
-					vacation, living in Kolkata. I will leave for Zürich in September to start my studies there.
+					spent a few years in USA when I was very young and a few in Singapore in recent years. Currently, I am in
+					Zürich, doing my masters, living the best life :)
 					<br />
 					My parents grew up in a village near Bolpur known as Bahiri. They grew up with very little and worked very
 					hard to earn whatever they have. My dad, Chandu, is a workaholic. He is that guy who is always on time, who
-					always has a plan C. He is the guy who decided my first name. Funny story here - when I asked him years later
-					why he chose that name, he said, "I guessed that if your name started with A, you would usually be around the
-					top of name lists." My mom, Pampa, is the glue of the family. When I say family, I mean our whole extended
-					family. She's an expert of interpersonal relationships and one of the smartest and kindest people that I know.
-					My dad believes in opulence and my mom believes in staying as grounded as possible. Hence, they balance each
-					other out pretty well.
+					always has a plan C. My mom, Pampa, is the glue of the family. She's an expert of interpersonal relationships
+					and one of the smartest and kindest people that I know. My dad believes in abundance and my mom believes in
+					staying as grounded as possible. They end up balancing each other out pretty well.
 				</Typography>
 				<Typography variant="body1" sx={{ mb: 4 }}>
 					I did most of my schooling in Kolkata. I studied at Garden High School till 10<sup>th</sup> standard. If
 					someone would have told me around 4<sup>th</sup> standard that I would end up studying mathematics, I would
 					have laughed at them. Uptil 7<sup>th</sup> standard, I was more interested in art, music and sports class with
 					no academic inclination whatsoever. It was only in 8<sup>th</sup> standard that I developed a liking towards
-					mathematics which would grow and shrink in the years to come.
+					mathematics which would grow in the years to come.
 					<br />I did my 11<sup>th</sup> and 12<sup>th</sup> standard from Delhi Public School, Ruby Park.
 				</Typography>
 				<Typography variant="body1" sx={{ mb: 6 }}>
