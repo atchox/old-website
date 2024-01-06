@@ -89,6 +89,40 @@ const data = {
 			</>
 		]
 	],
+	Projects: [
+		[
+			"2023",
+			"Hack4Good@ETHZ Analytics Club\nThis project is in collaboration with the Centre for Security Studies at ETHZ. We look at night time light data to look for possible correlation with military events in conflict zones like Ukraine. The work done so far involved using simple time series techniques to explore if this was a viable route to explore."
+		],
+		[
+			"2022",
+			"Gaussian Processes for Pareto Front Estimation in High Dimensional Decision Spaces\nThe work I have been doing involves using Gaussian Processes for estimating the Pareto set given training data (usually obtained by solving benchmark problems with NSGA-III or NSGA-II) and test Pareto front data using Python code leveraging packages such as pymoo, tensorflow and numpy. Gaussian Processes, in this case, have the advantage of not only providing an estimate of the Pareto point but also the uncertainty tied in with estimating said point."
+		],
+		[
+			"2021",
+			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
+		],
+		[
+			"2020 - Present",
+			<>
+				<Tooltip
+					title={
+						<>
+							{"LIMIT"}
+							<br />
+							<ExternalLink href="https://www.limitisi.in">Website</ExternalLink>
+						</>
+					}
+				>
+					<Box component="span">LIMIT</Box>
+				</Tooltip>
+				<br />
+				{
+					"LIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
+				}
+			</>
+		]
+	],
 	Scholarship: [
 		[
 			"2020 - Present",
@@ -198,39 +232,11 @@ const data = {
 		["Databases", "MongoDB, MySQL"],
 		["Others", "ReactJS, NodeJS, ExpressJS, HTML, CSS, Django"]
 	],
-	Projects: [
-		[
-			"2023",
-			"Hack4Good@ETHZ Analytics Club\nThis project is in collaboration with the Centre for Security Studies at ETHZ. We look at night time light data to look for possible correlation with military events in conflict zones like Ukraine. The work done so far involved using simple time series techniques to explore if this was a viable route to explore."
-		],
-		[
-			"2022",
-			"Gaussian Processes for Pareto Front Estimation in High Dimensional Decision Spaces\nThe work I have been doing involves using Gaussian Processes for estimating the Pareto set given training data (usually obtained by solving benchmark problems with NSGA-III or NSGA-II) and test Pareto front data using Python code leveraging packages such as pymoo, tensorflow and numpy. Gaussian Processes, in this case, have the advantage of not only providing an estimate of the Pareto point but also the uncertainty tied in with estimating said point."
-		],
-		[
-			"2021",
-			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
-		],
-		[
-			"2020 - Present",
-			<>
-				<Tooltip
-					title={
-						<>
-							{"LIMIT"}
-							<br />
-							<ExternalLink href="https://www.limitisi.in">Website</ExternalLink>
-						</>
-					}
-				>
-					<Box component="span">LIMIT</Box>
-				</Tooltip>
-				<br />
-				{
-					"LIMIT is an online mathematics competition organized by the students and research scholars of ISI Bangalore. I have the opportunity to be a part of the LIMIT team working mainly on the technical and communication teams. I am responsible for building and managing the websites such as the portal for registration of our candidates and the examination portal."
-				}
-			</>
-		]
+	Languages: [
+		["English", "Native or Bilingual Proficiency"],
+		["Hindi", "Native or Bilingual Proficiency"],
+		["Bengali", "Native or Bilingual Proficiency"],
+		["German", "Limited Working Proficiency"]
 	]
 }
 
