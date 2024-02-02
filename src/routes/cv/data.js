@@ -89,7 +89,7 @@ const data = {
 			</>
 		]
 	],
-	Projects: [
+	"Research Experience": [
 		[
 			"2023",
 			"Hack4Good@ETHZ Analytics Club\nThis project is in collaboration with the Centre for Security Studies at ETHZ. We look at night time light data to look for possible correlation with military events in conflict zones like Ukraine. The work done so far involved using simple time series techniques to explore if this was a viable route to explore."
@@ -101,6 +101,12 @@ const data = {
 		[
 			"2021",
 			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
+		]
+	],
+	"Work Experience": [
+		[
+			"2024",
+			"Teaching Assistant, D-MATH, ETHZ\nTeaching Assistant in the Spring Semester of 2024 for course 401-1152-02L: Lineare Algebra II"
 		],
 		[
 			"2020 - Present",
