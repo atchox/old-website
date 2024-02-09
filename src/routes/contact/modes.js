@@ -47,6 +47,12 @@ const Viewer = ({ n, sN, e, sE, m, sM, tab }) => {
 				</ListItem>
 				<ListItem>
 					<ListItemText
+						primary={<ExternalLink href="https://www.linkedin.com/in/atreyachoudhury">atreyachoudhury</ExternalLink>}
+						secondary="LinkedIn"
+					/>
+				</ListItem>
+				<ListItem>
+					<ListItemText
 						primary={<ExternalLink href="https://www.instagram.com/_atchox_">_atchox_</ExternalLink>}
 						secondary="Instagram"
 					/>

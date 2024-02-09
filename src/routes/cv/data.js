@@ -105,7 +105,7 @@ const data = {
 	],
 	"Work Experience": [
 		[
-			"2024",
+			"2024 - Present",
 			"Teaching Assistant, D-MATH, ETHZ\nTeaching Assistant in the Spring Semester of 2024 for course 401-1152-02L: Lineare Algebra II"
 		],
 		[
