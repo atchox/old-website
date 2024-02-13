@@ -20,14 +20,6 @@ export default function FAQ(props) {
 				</Details>
 			</Accordion>
 			<Accordion>
-				<Summary>What do plan to do when you grow up?</Summary>
-				<Details>
-					<Typography variant="body1">
-						<strong>*stares blankly without expression*</strong>
-					</Typography>
-				</Details>
-			</Accordion>
-			<Accordion>
 				<Summary>Your favourite TV shows?</Summary>
 				<Details>
 					<List>
@@ -48,8 +40,8 @@ export default function FAQ(props) {
 				<Summary>Your favourite music genre?</Summary>
 				<Details>
 					<Typography variant="body1">
-						Don't really have one. It keeps changing with the seasons. Soul, jazz, Bollywood, rock, rap, hiphop, are
-						some of my favourites though.
+						Don't really have one. It keeps changing with the seasons. Soul, jazz, Bollywood, rock, rap, hiphop, I enjoy
+						it all.
 					</Typography>
 				</Details>
 			</Accordion>
