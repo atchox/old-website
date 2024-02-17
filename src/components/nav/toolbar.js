@@ -69,6 +69,7 @@ const NavBox = styled(({ expanded, setExpanded, className }) => {
 	const routes = [
 		{ name: "About", link: "/about" },
 		{ name: "CV", link: "/cv" },
+		{ name: "Teaching", link: "/teaching" },
 		{ name: "Blog", link: "/blog" },
 		{ name: "Gallery", link: "/gallery" },
 		{ name: "Contact", link: "/contact" }

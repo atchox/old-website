@@ -3,6 +3,7 @@ import { createBrowserRouter, ScrollRestoration, RouterProvider, Routes, Route }
 import Footer from "./components/footer"
 import Nav from "./components/nav"
 import PreLoader from "./components/preloader"
+import Teaching from "./routes/teaching"
 const Home = lazy(() => import("./routes/home"))
 const About = lazy(() => import("./routes/about"))
 const CV = lazy(() => import("./routes/cv"))
@@ -41,6 +42,7 @@ function Root() {
 							</Suspense>
 						}
 					/>
+					<Route path="teaching/*" element={<Teaching />} />
 					<Route
 						path="blog"
 						element={
@@ -91,7 +93,6 @@ function Root() {
 					/>
 				</Route>
 			</Routes>
-			{/* <Footer /> */}
 		</>
 	)
 }
