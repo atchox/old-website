@@ -25,7 +25,9 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Typography variant="h6">Lecture Hours</Typography>
-						<Typography variant="body1">Wednesdays and Fridays from 10:15 to 12:00 in HG F5 and HG F7</Typography>
+						<Typography variant="body1">
+							<b>Wednesdays and Fridays</b> from <b>10:15 to 12:00</b> in <b>HG F5 and HG F7</b>
+						</Typography>
 					</Box>
 				</Stack>
 				<Typography variant="h3" sx={{ color: "grey.400", mt: 4 }}>
@@ -37,7 +39,9 @@ export default function LAII() {
 				<Typography variant="h6" sx={{ mt: 2 }}>
 					Timing
 				</Typography>
-				<Typography variant="body1">Wednesdays and Fridays from 10:15 to 12:00 in HG F5 and HG F7</Typography>
+				<Typography variant="body1">
+					Mondays from <b>14:15 to 16:00</b> in <b>HG G26.3</b>
+				</Typography>
 				<Stack direction="column" spacing={4} sx={{ mt: 6 }}>
 					<Box>
 						<Header>19/02</Header>
