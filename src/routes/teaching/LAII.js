@@ -26,7 +26,7 @@ export default function LAII() {
 					<Box>
 						<Typography variant="h6">Lecture Hours</Typography>
 						<Typography variant="body1">
-							<b>Wednesdays and Fridays</b> from <b>10:15 to 12:00</b> in <b>HG F5 and HG F7</b>
+							<b>Wednesdays and Fridays</b> from <b>10:15 to 12:00</b> in <b>HG F 5 and HG F 7</b>
 						</Typography>
 					</Box>
 				</Stack>
@@ -40,21 +40,45 @@ export default function LAII() {
 					Timing
 				</Typography>
 				<Typography variant="body1">
-					Mondays from <b>14:15 to 16:00</b> in <b>HG G26.3</b>
+					Mondays from <b>14:15 to 16:00</b> in <b>HG G 26.3</b>
 				</Typography>
 				<Stack direction="column" spacing={4} sx={{ mt: 6 }}>
 					<Box>
-						<Header>19/02</Header>
+						<Header>21/02</Header>
 						<Typography variant="body1">We review duals, quotients and determinants</Typography>
-						<Link
-							href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/problems.pdf`}
-							type="application/pdf"
-							variant="body1"
-							underline="none"
-							target="__blank__"
+						<Stack
+							direction="row"
+							spacing={2}
+							sx={{ mt: 1 }}
+							divider={
+								<DefDivider
+									flexItem
+									orientation="vertical"
+									sx={{
+										borderColor: "grey.800"
+									}}
+								/>
+							}
 						>
-							problems
-						</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/problems.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+								target="__blank__"
+							>
+								problems
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/solutions.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+								target="__blank__"
+							>
+								solutions
+							</Link>
+						</Stack>
 						<Divider>1</Divider>
 					</Box>
 					<Box>
@@ -109,7 +133,6 @@ const Divider = ({ children, ...props }) => (
 			}
 		}}
 		variant="caption"
-		aria-hidden="true"
 		textAlign="left"
 		flexItem
 		orientation="horizontal"
