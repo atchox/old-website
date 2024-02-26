@@ -44,7 +44,7 @@ export default function LAII() {
 				</Typography>
 				<Stack direction="column" spacing={4} sx={{ mt: 6 }}>
 					<Box>
-						<Header>21/02</Header>
+						<Header>23/02</Header>
 						<Typography variant="body1">We review duals, quotients and determinants</Typography>
 						<Stack
 							direction="row"
@@ -61,32 +61,47 @@ export default function LAII() {
 							}
 						>
 							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/problems.pdf`}
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/0/problems.pdf`}
 								type="application/pdf"
 								variant="body1"
 								underline="none"
-								target="__blank__"
 							>
 								problems
 							</Link>
 							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/solutions.pdf`}
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/0/solutions.pdf`}
 								type="application/pdf"
 								variant="body1"
 								underline="none"
-								target="__blank__"
 							>
 								solutions
 							</Link>
 						</Stack>
-						<Divider>1</Divider>
+						<Divider>0</Divider>
 					</Box>
 					<Box>
 						<Header>26/02</Header>
-						<Divider>2</Divider>
+						<Typography sx={{ mb: 1 }} variant="body1">
+							We discuss the questions from the homework. We talk about a general template we usually follow for solving
+							these recurrence/induction based determinant computation exercises. We also talk briefly about the
+							properties of determinant functions.
+						</Typography>
+						<Link
+							href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/notes.pdf`}
+							type="application/pdf"
+							variant="body1"
+							underline="none"
+						>
+							notes
+						</Link>
+						<Divider>1</Divider>
 					</Box>
 					<Box>
 						<Header>04/03</Header>
+						<Divider>2</Divider>
+					</Box>
+					<Box>
+						<Header>11/03</Header>
 						<Divider>3</Divider>
 					</Box>
 				</Stack>
