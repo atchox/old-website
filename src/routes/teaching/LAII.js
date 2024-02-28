@@ -81,19 +81,42 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Header>26/02</Header>
-						<Typography sx={{ mb: 1 }} variant="body1">
+						<Typography variant="body1">
 							We discuss the questions from the homework. We talk about a general template we usually follow for solving
 							these recurrence/induction based determinant computation exercises. We also talk briefly about the
 							properties of determinant functions.
 						</Typography>
-						<Link
-							href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/notes.pdf`}
-							type="application/pdf"
-							variant="body1"
-							underline="none"
+						<Stack
+							direction="row"
+							spacing={2}
+							sx={{ mt: 1 }}
+							divider={
+								<DefDivider
+									flexItem
+									orientation="vertical"
+									sx={{
+										borderColor: "grey.800"
+									}}
+								/>
+							}
 						>
-							notes
-						</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/exercises.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								some exercises
+							</Link>
+						</Stack>
 						<Divider>1</Divider>
 					</Box>
 					<Box>
