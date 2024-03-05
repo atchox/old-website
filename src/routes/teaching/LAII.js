@@ -121,6 +121,38 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Header>04/03</Header>
+						<Typography variant="body1">We discuss the questions from the homework.</Typography>
+						<Stack
+							direction="row"
+							spacing={2}
+							sx={{ mt: 1 }}
+							divider={
+								<DefDivider
+									flexItem
+									orientation="vertical"
+									sx={{
+										borderColor: "grey.800"
+									}}
+								/>
+							}
+						>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/2/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/2/exercises.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								some exercises
+							</Link>
+						</Stack>
 						<Divider>2</Divider>
 					</Box>
 					<Box>
