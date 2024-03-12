@@ -34,7 +34,7 @@ export default function LAII() {
 					Exercise Hour
 				</Typography>
 				<Typography variant="body1" sx={{ mt: 1 }}>
-					This page contains all the material I use for the exercise hour I conduct
+					This page contains all the material I use for the exercise hour I conduct.
 				</Typography>
 				<Typography variant="h6" sx={{ mt: 2 }}>
 					Timing
@@ -45,21 +45,8 @@ export default function LAII() {
 				<Stack direction="column" spacing={4} sx={{ mt: 6 }}>
 					<Box>
 						<Header>23/02</Header>
-						<Typography variant="body1">We review duals, quotients and determinants</Typography>
-						<Stack
-							direction="row"
-							spacing={2}
-							sx={{ mt: 1 }}
-							divider={
-								<DefDivider
-									flexItem
-									orientation="vertical"
-									sx={{
-										borderColor: "grey.800"
-									}}
-								/>
-							}
-						>
+						<Typography variant="body1">We review duals, quotients and determinants.</Typography>
+						<FileList>
 							<Link
 								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/0/problems.pdf`}
 								type="application/pdf"
@@ -76,7 +63,7 @@ export default function LAII() {
 							>
 								solutions
 							</Link>
-						</Stack>
+						</FileList>
 						<Divider>0</Divider>
 					</Box>
 					<Box>
@@ -86,20 +73,7 @@ export default function LAII() {
 							these recurrence/induction based determinant computation exercises. We also talk briefly about the
 							properties of determinant functions.
 						</Typography>
-						<Stack
-							direction="row"
-							spacing={2}
-							sx={{ mt: 1 }}
-							divider={
-								<DefDivider
-									flexItem
-									orientation="vertical"
-									sx={{
-										borderColor: "grey.800"
-									}}
-								/>
-							}
-						>
+						<FileList>
 							<Link
 								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/notes.pdf`}
 								type="application/pdf"
@@ -116,26 +90,13 @@ export default function LAII() {
 							>
 								some exercises
 							</Link>
-						</Stack>
+						</FileList>
 						<Divider>1</Divider>
 					</Box>
 					<Box>
 						<Header>04/03</Header>
 						<Typography variant="body1">We discuss the questions from the homework.</Typography>
-						<Stack
-							direction="row"
-							spacing={2}
-							sx={{ mt: 1 }}
-							divider={
-								<DefDivider
-									flexItem
-									orientation="vertical"
-									sx={{
-										borderColor: "grey.800"
-									}}
-								/>
-							}
-						>
+						<FileList>
 							<Link
 								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/2/notes.pdf`}
 								type="application/pdf"
@@ -152,12 +113,37 @@ export default function LAII() {
 							>
 								some exercises
 							</Link>
-						</Stack>
+						</FileList>
 						<Divider>2</Divider>
 					</Box>
 					<Box>
 						<Header>11/03</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and talk about direct sums.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/3/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/3/exercises.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								some exercises
+							</Link>
+						</FileList>
 						<Divider>3</Divider>
+					</Box>
+					<Box>
+						<Header>18/03</Header>
+						<Divider>4</Divider>
 					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
@@ -191,6 +177,24 @@ const Header = ({ children, ...props }) => (
 	<Typography variant="h6" sx={{ color: "grey.500", mb: 1 }} {...props}>
 		{children}/2024
 	</Typography>
+)
+
+const FileList = props => (
+	<Stack
+		direction="row"
+		spacing={2}
+		sx={{ mt: 1 }}
+		divider={
+			<DefDivider
+				flexItem
+				orientation="vertical"
+				sx={{
+					borderColor: "grey.800"
+				}}
+			/>
+		}
+		{...props}
+	/>
 )
 
 const Divider = ({ children, ...props }) => (
