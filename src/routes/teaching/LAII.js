@@ -143,7 +143,33 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Header>18/03</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework, talk about the most fundamental properties of minimal
+							polynomials and understand the Jordan Normal form and some of its properties via examples.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/4/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/4/exercises.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								some exercises
+							</Link>
+						</FileList>
 						<Divider>4</Divider>
+					</Box>
+					<Box>
+						<Header>25/03</Header>
+						<Divider>5</Divider>
 					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
