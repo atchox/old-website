@@ -169,7 +169,39 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Header>25/03</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and talk about the basis transformations for the Jordan Normal
+							form and Jordan chains via examples. We also discuss some of the key results of generalised eigenspaces
+							from the script.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/5/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/5/exercises.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								some exercises
+							</Link>
+						</FileList>
 						<Divider>5</Divider>
+					</Box>
+					<Box>
+						<Header>01/04</Header>
+						<Typography variant="body1">No classes due to Easter break.</Typography>
+						<Divider>6</Divider>
+					</Box>
+					<Box>
+						<Header>08/04</Header>
+						<Divider>7</Divider>
 					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
