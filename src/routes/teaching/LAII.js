@@ -201,6 +201,19 @@ export default function LAII() {
 					</Box>
 					<Box>
 						<Header>08/04</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and review some ideas from Jordan chains.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/7/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+						</FileList>
 						<Divider>7</Divider>
 					</Box>
 				</Stack>
