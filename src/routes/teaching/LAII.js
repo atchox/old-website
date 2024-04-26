@@ -216,6 +216,39 @@ export default function LAII() {
 						</FileList>
 						<Divider>7</Divider>
 					</Box>
+					<Box>
+						<Header>15/04</Header>
+						<Typography variant="body1">No classes due to Sechseläuten.</Typography>
+						{/* <FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/8/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+						</FileList> */}
+						<Divider>8</Divider>
+					</Box>
+					<Box>
+						<Header>22/04</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and discuss the intuition for projections and the Gram-Schmidt
+							process.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/9/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes (rough)
+							</Link>
+						</FileList>
+						<Divider>9</Divider>
+					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
 					Resources
