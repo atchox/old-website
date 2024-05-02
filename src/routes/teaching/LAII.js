@@ -249,6 +249,24 @@ export default function LAII() {
 						</FileList>
 						<Divider>9</Divider>
 					</Box>
+					<Box>
+						<Header>29/04</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and discuss the intuition for QR decompositions and how inner
+							products help to construct a basis for the dual space.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/10/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+						</FileList>
+						<Divider>10</Divider>
+					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
 					Resources
