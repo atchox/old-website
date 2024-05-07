@@ -252,8 +252,8 @@ export default function LAII() {
 					<Box>
 						<Header>29/04</Header>
 						<Typography variant="body1">
-							We discuss the questions from the homework and discuss the intuition for QR decompositions and how inner
-							products help to construct a basis for the dual space.
+							We discuss the questions from the homework, the intuition for QR decompositions and how inner products
+							help to construct a basis for the dual space.
 						</Typography>
 						<FileList>
 							<Link
@@ -266,6 +266,23 @@ export default function LAII() {
 							</Link>
 						</FileList>
 						<Divider>10</Divider>
+					</Box>
+					<Box>
+						<Header>06/05</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework, the Spectral theorem and the adjugate map.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/11/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+						</FileList>
+						<Divider>11</Divider>
 					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
