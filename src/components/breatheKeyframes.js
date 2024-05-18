@@ -1,4 +1,4 @@
-import { keyframes } from "@mui/system"
+import { keyframes } from "@emotion/react"
 
 export default keyframes`
   0% {

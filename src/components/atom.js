@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box"
 import styled from "@mui/material/styles/styled"
 
-const Atom = styled(({ ...others }) => {
+const Atom = styled(props => {
 	let content = []
 
 	for (let i = 1; i <= 8; i++) {
@@ -9,7 +9,7 @@ const Atom = styled(({ ...others }) => {
 	}
 
 	return (
-		<Box component="ul" {...others}>
+		<Box component="ul" {...props}>
 			<Box component="li" className="center" />
 			{content}
 		</Box>

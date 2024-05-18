@@ -284,6 +284,23 @@ export default function LAII() {
 						</FileList>
 						<Divider>11</Divider>
 					</Box>
+					<Box>
+						<Header>13/05</Header>
+						<Typography variant="body1">
+							We discuss the questions from the homework and have a small discussion on isometries.
+						</Typography>
+						<FileList>
+							<Link
+								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/12/notes.pdf`}
+								type="application/pdf"
+								variant="body1"
+								underline="none"
+							>
+								notes
+							</Link>
+						</FileList>
+						<Divider>12</Divider>
+					</Box>
 				</Stack>
 				<Typography variant="h6" sx={{ mt: 6 }}>
 					Resources

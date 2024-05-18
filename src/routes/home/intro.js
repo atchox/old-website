@@ -1,6 +1,6 @@
 import Container from "@mui/material/Container"
 import FullHeight from "../../components/fullHeight"
-import { keyframes } from "@mui/system"
+import { keyframes } from "@emotion/react"
 import Writing from "../../components/writing"
 
 export default function Intro() {
