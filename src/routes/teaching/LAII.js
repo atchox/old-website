@@ -47,14 +47,7 @@ export default function LAII() {
 						<Header>23/02</Header>
 						<Typography variant="body1">We review duals, quotients and determinants.</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/0/problems.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								problems
-							</Link>
+							<NotesLink week={0} />
 							<Link
 								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/0/solutions.pdf`}
 								type="application/pdf"
@@ -74,22 +67,8 @@ export default function LAII() {
 							properties of determinant functions.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/1/exercises.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								some exercises
-							</Link>
+							<NotesLink week={1} />
+							<ExercisesLink week={1} />
 						</FileList>
 						<Divider>1</Divider>
 					</Box>
@@ -97,22 +76,8 @@ export default function LAII() {
 						<Header>04/03</Header>
 						<Typography variant="body1">We discuss the questions from the homework.</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/2/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/2/exercises.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								some exercises
-							</Link>
+							<NotesLink week={2} />
+							<ExercisesLink week={2} />
 						</FileList>
 						<Divider>2</Divider>
 					</Box>
@@ -122,22 +87,8 @@ export default function LAII() {
 							We discuss the questions from the homework and talk about direct sums.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/3/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/3/exercises.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								some exercises
-							</Link>
+							<NotesLink week={3} />
+							<ExercisesLink week={3} />
 						</FileList>
 						<Divider>3</Divider>
 					</Box>
@@ -148,22 +99,8 @@ export default function LAII() {
 							polynomials and understand the Jordan Normal form and some of its properties via examples.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/4/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/4/exercises.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								some exercises
-							</Link>
+							<NotesLink week={4} />
+							<ExercisesLink week={4} />
 						</FileList>
 						<Divider>4</Divider>
 					</Box>
@@ -175,22 +112,8 @@ export default function LAII() {
 							from the script.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/5/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/5/exercises.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								some exercises
-							</Link>
+							<NotesLink week={5} />
+							<ExercisesLink week={5} />
 						</FileList>
 						<Divider>5</Divider>
 					</Box>
@@ -205,14 +128,7 @@ export default function LAII() {
 							We discuss the questions from the homework and review some ideas from Jordan chains.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/7/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
+							<NotesLink week={7} />
 						</FileList>
 						<Divider>7</Divider>
 					</Box>
@@ -238,14 +154,7 @@ export default function LAII() {
 							process.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/9/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes (rough)
-							</Link>
+							<NotesLink week={9} />
 						</FileList>
 						<Divider>9</Divider>
 					</Box>
@@ -256,14 +165,7 @@ export default function LAII() {
 							help to construct a basis for the dual space.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/10/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
+							<NotesLink week={10} />
 						</FileList>
 						<Divider>10</Divider>
 					</Box>
@@ -273,14 +175,7 @@ export default function LAII() {
 							We discuss the questions from the homework, the Spectral theorem and the adjugate map.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/11/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
+							<NotesLink week={11} />
 						</FileList>
 						<Divider>11</Divider>
 					</Box>
@@ -290,14 +185,7 @@ export default function LAII() {
 							We discuss the questions from the homework and have a small discussion on isometries.
 						</Typography>
 						<FileList>
-							<Link
-								href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/12/notes.pdf`}
-								type="application/pdf"
-								variant="body1"
-								underline="none"
-							>
-								notes
-							</Link>
+							<NotesLink week={12} />
 						</FileList>
 						<Divider>12</Divider>
 					</Box>
@@ -352,6 +240,30 @@ const FileList = props => (
 		{...props}
 	/>
 )
+
+const NotesLink = ({ week, ...props }) => (
+	<Link
+		href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/${week}/notes.pdf`}
+		type="application/pdf"
+		variant="body1"
+		underline="none"
+		{...props}
+	/>
+)
+
+NotesLink.defaultProps = { children: "notes" }
+
+const ExercisesLink = ({ week, ...props }) => (
+	<Link
+		href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/${week}/exercises.pdf`}
+		type="application/pdf"
+		variant="body1"
+		underline="none"
+		{...props}
+	/>
+)
+
+ExercisesLink.defaultProps = { children: "some exercises" }
 
 const Divider = ({ children, ...props }) => (
 	<DefDivider

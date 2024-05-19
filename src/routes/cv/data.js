@@ -1,5 +1,7 @@
+import { Link as RouterLink } from "react-router-dom"
 import Box from "@mui/material/Box"
 import DefTooltip from "@mui/material/Tooltip"
+import Link from "@mui/material/Link"
 import ExternalLink from "../../components/externalLink"
 
 const Tooltip = props => (
@@ -106,7 +108,26 @@ const data = {
 	"Work Experience": [
 		[
 			"2024 - Present",
-			"Teaching Assistant, D-MATH, ETHZ\nTeaching Assistant in the Spring Semester of 2024 for course 401-1152-02L: Linear Algebra II"
+			<>
+				Teaching Assistant, D-MATH, ETHZ
+				<br />
+				Teaching Assistant in the Spring Semester of 2024 for the course{" "}
+				<Tooltip
+					title={
+						<>
+							<ExternalLink href="https://metaphor.ethz.ch/x/2024/fs/401-1152-02L/">Linear Algebra II</ExternalLink>
+							{" by Prof. Sarah Zerbes"}
+						</>
+					}
+				>
+					<Box component="span">401-1152-02L: Linear Algebra II</Box>
+				</Tooltip>
+				. Find my notes{" "}
+				<Link underline="hover" component={RouterLink} to="/teaching/LAII">
+					here
+				</Link>
+				.
+			</>
 		],
 		[
 			"2020 - Present",
