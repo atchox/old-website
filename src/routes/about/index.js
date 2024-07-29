@@ -4,7 +4,6 @@ import FullHeight from "../../components/fullHeight"
 import Typography from "@mui/material/Typography"
 import Link from "@mui/material/Link"
 import { Link as RouterLink } from "react-router-dom"
-import Skipper from "./skipper"
 import FAQ from "./faq"
 import Header from "./header"
 import LetsTalk from "./letsTalk"
@@ -17,9 +16,16 @@ export default function About() {
 	return (
 		<FullHeight minMode sx={{ bgcolor: "common.black", color: "text.primary" }}>
 			<Container>
-				<Skipper />
-				<Header>The Basics</Header>
-				<Typography variant="body1" sx={{ mb: 4 }}>
+				<Header sx={{ pt: 5 }}>The Basics</Header>
+				<Typography variant="h5" sx={{ mt: 4, mb: 1 }}>
+					अयं निजः परो वेति गणना लघुचेतसाम्।
+					<br />
+					उदारचरितानां तु वसुधैव कुटुम्बकम्॥
+				</Typography>
+				<Typography sx={{ color: "grey.500" }} variant="caption">
+					<i>- Upanishad</i>
+				</Typography>
+				<Typography variant="body1" sx={{ my: 4 }}>
 					I was born on a Sunday afternoon in a small town in Birbhum, West Bengal known as Bolpur. I grew up in a
 					Bengali household, with sufficient exposure to classical music, Durga pujas and rice. My mom stays at home,
 					runs the family and likes to read and listen to music. My dad works in Tech Consulting and is the most
@@ -49,7 +55,7 @@ export default function About() {
 					<br />I play badminton and football whenever I get a chance. I love to swim and am currently trying to take up
 					hiking.
 				</Typography>
-				<FAQ sx={{ mb: 8 }} />
+				<FAQ sx={{ my: 8 }} />
 				<LetsTalk />
 			</Container>
 		</FullHeight>

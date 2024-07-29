@@ -46,11 +46,17 @@ export default function FAQ(props) {
 				</Details>
 			</Accordion>
 			<Accordion>
-				<Summary>Top 3 favourite actors?</Summary>
+				<Summary>Top 5 favourite actors?</Summary>
 				<Details>
 					<List>
 						<ListItem>
 							<ListItemText primary="Tom Hanks" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Denzel Washington" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Robert De Niro" />
 						</ListItem>
 						<ListItem>
 							<ListItemText primary="Brad Pitt" />
@@ -62,17 +68,23 @@ export default function FAQ(props) {
 				</Details>
 			</Accordion>
 			<Accordion>
-				<Summary>Top 3 favourite actresses?</Summary>
+				<Summary>Top 5 favourite actresses?</Summary>
 				<Details>
 					<List>
 						<ListItem>
 							<ListItemText primary="Meryl Streep" />
 						</ListItem>
 						<ListItem>
+							<ListItemText primary="Cate Blanchett" />
+						</ListItem>
+						<ListItem>
 							<ListItemText primary="Anne Hathaway" />
 						</ListItem>
 						<ListItem>
-							<ListItemText primary="Cate Blanchett" />
+							<ListItemText primary="Sandra Bullock" />
+						</ListItem>
+						<ListItem>
+							<ListItemText primary="Natalie Portman" />
 						</ListItem>
 					</List>
 				</Details>
