@@ -61,7 +61,7 @@ export default function Message({ name, setName, email, setEmail, message, setMe
 	return (
 		<>
 			<Typography variant="h5" sx={{ color: "text.secondary" }}>
-				Send a message and I will reach back
+				Send a message to my inbox
 			</Typography>
 			<Box component="form" onSubmit={submit} sx={{ mt: 3 }}>
 				<Stack spacing={2} sx={{ mb: 2 }} direction={{ xs: "column", sm: "row" }}>

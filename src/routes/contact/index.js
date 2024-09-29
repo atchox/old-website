@@ -22,8 +22,9 @@ export default function Home() {
 							Contact Me
 						</Typography>
 						<Typography variant="body1">
-							Think you have an idea you wanna share with me? Think we have similar taste in movies? Let's start
-							talking!
+							I am always excited to talk about new topics especially if they are unknown to me. However, I do get a
+							little busy with my academic program sometimes so I apologize in advance if it takes me a little longer
+							than usual to reach back.
 						</Typography>
 					</Box>
 					<Modes sx={{ minWidth: { xs: "100%", md: "55%", lg: "60%" }, p: 2 }} />

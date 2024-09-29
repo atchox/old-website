@@ -5,10 +5,10 @@ import Writing from "../../components/writing"
 export default function LetsTalk() {
 	return (
 		<Writing align="center">
-			like what you see?
+			would you like to hear some more?
 			<br />
 			<Link underline="hover" component={RouterLink} to="/contact">
-				let's talk
+				reach out to me here
 			</Link>
 		</Writing>
 	)

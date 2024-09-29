@@ -14,9 +14,12 @@ export default function FAQ(props) {
 		<Box component={Element} name="faq" {...props}>
 			<Header>FAQ</Header>
 			<Accordion>
-				<Summary>What's it like being that tall?</Summary>
+				<Summary>What's it like being tall?</Summary>
 				<Details>
-					<Typography variant="body1">Great! Except when you go shopping for pants.</Typography>
+					<Typography variant="body1">
+						It comes in handy - once I was standing in the back of the Salle des États and could still see the Mona
+						Lisa! It can be annoying when you go shopping for pants.
+					</Typography>
 				</Details>
 			</Accordion>
 			<Accordion>
@@ -33,15 +36,17 @@ export default function FAQ(props) {
 							<ListItemText primary="Mr. Robot" />
 						</ListItem>
 					</List>
-					<Typography variant="body1">These are just 3 names out of a list of 50.</Typography>
+					<Typography variant="body1">
+						These are just 3 names I came up with. I fall in love with every third show I watch.
+					</Typography>
 				</Details>
 			</Accordion>
 			<Accordion>
 				<Summary>Your favourite music genre?</Summary>
 				<Details>
 					<Typography variant="body1">
-						Don't really have one. It keeps changing with the seasons. Soul, jazz, Bollywood, rock, rap, hiphop, I enjoy
-						it all.
+						I don't really have one. It keeps changing with the seasons. Soul, jazz, Bollywood, rock, rap, hiphop, I
+						enjoy it all.
 					</Typography>
 				</Details>
 			</Accordion>

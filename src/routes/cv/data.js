@@ -53,42 +53,6 @@ const data = {
 				<br />
 				{"Graduated First Division with Distinction"}
 			</>
-		],
-		[
-			"2018 - 2020",
-			<>
-				<Tooltip
-					title={
-						<>
-							{"DPSRPK"}
-							<br />
-							<ExternalLink href="https://www.dpskolkata.com">Website</ExternalLink>
-						</>
-					}
-				>
-					<Box component="span">Delhi Public School Ruby Park, Kolkata</Box>
-				</Tooltip>
-				<br />
-				{"95.6% in CBSE 2020"}
-			</>
-		],
-		[
-			"2016 - 2018",
-			<>
-				<Tooltip
-					title={
-						<>
-							{"GHS"}
-							<br />
-							<ExternalLink href="https://gardenhighschool.in">Website</ExternalLink>
-						</>
-					}
-				>
-					<Box component="span">Garden High School, Kolkata</Box>
-				</Tooltip>
-				<br />
-				{"96.4% in ICSE 2018"}
-			</>
 		]
 	],
 	"Research Experience": [
@@ -106,12 +70,12 @@ const data = {
 		],
 		[
 			"2021",
-			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there and Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
+			"Project for Statistics I Course\nWorked on a project for a course to reproduce and extend a research paper, “Is there an Economic Case for Energy Efficient Dwellings in the UK Private Rental Market” by F. Fuerst, M.F.C. Haddad, H. Adan."
 		]
 	],
 	"Work Experience": [
 		[
-			"2024 - Present",
+			"2024",
 			<>
 				Teaching Assistant, D-MATH, ETHZ
 				<br />

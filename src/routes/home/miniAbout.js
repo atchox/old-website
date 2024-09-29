@@ -43,7 +43,7 @@ export default function MiniAbout() {
 					}}
 					variant="h6"
 				>
-					Hey, I'm Atreya, a {age} year old from Kolkata in love with math, music and all things art.
+					Hey, I'm Atreya, a {age} year old from Kolkata passionate about math, music and all things art.
 					<br />
 					<KeepReading />
 				</Typography>
