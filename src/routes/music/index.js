@@ -3,7 +3,8 @@ import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
 import FullHeight from "../../components/fullHeight"
-import axios from "../../axiosSetup"
+import { directus } from "../../axiosSetup"
+import { readItems } from "@directus/sdk"
 import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 
@@ -15,12 +16,9 @@ export default function Home() {
 	})
 
 	useEffect(() => {
-		axios
-			.get("/music")
-			.then(data => {
-				data = data.data
-				setTracks(data)
-			})
+		directus
+			.request(readItems("music"))
+			.then(res => setTracks(res))
 			.catch(error => console.error(error))
 	}, [])
 
