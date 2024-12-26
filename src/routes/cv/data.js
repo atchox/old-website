@@ -57,6 +57,10 @@ const data = {
 	],
 	"Research Experience": [
 		[
+			"2024 - Present",
+			"Research Assistant, Robinson Lab, Department of Molecular Life Sciences, UZH\nI am supervised by Dr. Izaskun Mallona. I build performant tools in C++ for high throughput analysis of DNA methylation data computing different types of heterogeneity within and across sequences. Currently, I am involved in the application of these tools in simulated and real datasets for the purpose of benchmarking and extracting meaningful biological insights."
+		],
+		[
 			"2024",
 			"Semester Paper\nThe paper was written under advisement of Dr. Sucharita Ghosh.\nIt is about nonparametric regression on circular covariates. I explored the idea of a varying coefficient model for local regression with circular covariates. I examined the current local polynomial estimator and two similar estimators I proposed. I derived formulas (using the general model) not only for the estimation of functions under these estimators but also for their higher derivatives. I verified my simulations empirically in R with the NPCirc package."
 		],
@@ -223,9 +227,9 @@ const data = {
 		]
 	],
 	"Software Skills": [
-		["Languages", "C, Python, JavaScript, R, LaTeX"],
+		["Languages", "C, C++, Python, JavaScript, R, LaTeX"],
 		["Databases", "MongoDB, MySQL"],
-		["Others", "ReactJS, NodeJS, ExpressJS, HTML, CSS, Django"]
+		["Others", "CMake, CPack, ReactJS, NodeJS, ExpressJS, HTML, CSS, Django"]
 	],
 	Languages: [
 		["English", "Native or Bilingual Proficiency"],

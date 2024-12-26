@@ -241,29 +241,29 @@ const FileList = props => (
 	/>
 )
 
-const NotesLink = ({ week, ...props }) => (
+const NotesLink = ({ week, children = "notes", ...props }) => (
 	<Link
 		href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/${week}/notes.pdf`}
 		type="application/pdf"
 		variant="body1"
 		underline="none"
 		{...props}
-	/>
+	>
+		{children}
+	</Link>
 )
 
-NotesLink.defaultProps = { children: "notes" }
-
-const ExercisesLink = ({ week, ...props }) => (
+const ExercisesLink = ({ week, children = "some exercises", ...props }) => (
 	<Link
 		href={`${process.env.PUBLIC_URL}/pdf/FS24-LAII/${week}/exercises.pdf`}
 		type="application/pdf"
 		variant="body1"
 		underline="none"
 		{...props}
-	/>
+	>
+		{children}
+	</Link>
 )
-
-ExercisesLink.defaultProps = { children: "some exercises" }
 
 const Divider = ({ children, ...props }) => (
 	<DefDivider

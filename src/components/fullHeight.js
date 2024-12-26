@@ -2,7 +2,7 @@ import Box from "@mui/material/Box"
 import useTheme from "@mui/material/styles/useTheme"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
-function FullHeight({ reduceBy, minMode, children, sx, ...others }) {
+function FullHeight({ reduceBy = 0, minMode = false, children, sx, ...others }) {
 	const theme = useTheme()
 
 	const base = theme.breakpoints.up("sm")
@@ -26,11 +26,6 @@ function FullHeight({ reduceBy, minMode, children, sx, ...others }) {
 			{children}
 		</Box>
 	)
-}
-
-FullHeight.defaultProps = {
-	reduceBy: 0,
-	minMode: false
 }
 
 export default FullHeight

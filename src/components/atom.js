@@ -14,7 +14,7 @@ const Atom = styled(props => {
 			{content}
 		</Box>
 	)
-})(({ theme, speed, size }) => {
+})(({ theme, speed = 0.16, size = 5 }) => {
 	let css = {
 		position: "relative",
 		width: theme.spacing(size),
@@ -70,10 +70,5 @@ const Atom = styled(props => {
 
 	return css
 })
-
-Atom.defaultProps = {
-	speed: 0.16,
-	size: 5
-}
 
 export default Atom
