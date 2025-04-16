@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
-import styled from "@mui/material/styles/styled"
+import { styled } from "@mui/material/styles"
 import FullHeight from "../../components/fullHeight"
 import data from "./data"
 

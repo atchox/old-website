@@ -1,5 +1,5 @@
 import AppBar from "@mui/material/AppBar"
-import styled from "@mui/material/styles/styled"
+import { styled } from "@mui/material/styles"
 
 export default styled(({ className, children }) => (
 	<AppBar position="fixed" elevation={0} className={className}>

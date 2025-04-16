@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography"
 import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import Link from "@mui/material/Link"
-import styled from "@mui/material/styles/styled"
+import { styled } from "@mui/material/styles"
 import { Link as RouterLink } from "react-router-dom"
 
 export default function Courses() {

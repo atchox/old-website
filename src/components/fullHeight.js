@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box"
-import useTheme from "@mui/material/styles/useTheme"
+import { useTheme } from "@mui/material/styles"
 import useMediaQuery from "@mui/material/useMediaQuery"
 
 function FullHeight({ reduceBy = 0, minMode = false, children, sx, ...others }) {

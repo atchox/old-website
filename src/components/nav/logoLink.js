@@ -1,6 +1,6 @@
 import Link from "@mui/material/Link"
 import { NavLink as RouterLink } from "react-router-dom"
-import styled from "@mui/material/styles/styled"
+import { styled } from "@mui/material/styles"
 
 export default styled(({ setExpanded, ...others }) => (
 	<Link underline="none" component={RouterLink} onClick={() => setExpanded(false)} to="/" {...others}>

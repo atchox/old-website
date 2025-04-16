@@ -1,5 +1,5 @@
 import { useState } from "react"
-import styled from "@mui/material/styles/styled"
+import { styled } from "@mui/material/styles"
 import Outer from "./appbar"
 import Inner from "./toolbar"
 
