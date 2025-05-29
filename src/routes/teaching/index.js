@@ -1,5 +1,5 @@
 import { useEffect, lazy, Suspense } from "react"
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router"
 import PreLoader from "../../components/preloader"
 const Courses = lazy(() => import("./courses"))
 const LAII = lazy(() => import("./LAII"))

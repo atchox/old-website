@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import Container from "@mui/material/Container"
 import Typography from "@mui/material/Typography"
 import Link from "@mui/material/Link"
-import { Link as RouterLink } from "react-router-dom"
+import { Link as RouterLink } from "react-router"
 import FullHeight from "../../components/fullHeight"
 
 export default function NoMatch() {

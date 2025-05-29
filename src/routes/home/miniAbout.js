@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography"
 import atreya from "./img/atreya_BW.jpg"
 import Image from "../../components/image"
 import Link from "@mui/material/Link"
-import { NavLink as RouterLink } from "react-router-dom"
+import { NavLink as RouterLink } from "react-router"
 
 export default function MiniAbout() {
 	const birth = new Date("2002-11-03T00:00:00.000+05:30")

@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack"
 import DefDivider from "@mui/material/Divider"
 import Box from "@mui/material/Box"
 import Link from "@mui/material/Link"
-import { Link as RouterLink } from "react-router-dom"
+import { Link as RouterLink } from "react-router"
 
 export default function LAII() {
 	return (

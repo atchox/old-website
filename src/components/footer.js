@@ -3,7 +3,7 @@ import Box from "@mui/material/Box"
 import Container from "@mui/material/Container"
 import Link from "@mui/material/Link"
 import Typography from "@mui/material/Typography"
-import { Link as RouterLink, Outlet } from "react-router-dom"
+import { Link as RouterLink, Outlet } from "react-router"
 import axios from "../axiosSetup"
 
 export default function Footer() {

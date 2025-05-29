@@ -1,5 +1,5 @@
 import Link from "@mui/material/Link"
-import { NavLink as RouterLink } from "react-router-dom"
+import { NavLink as RouterLink } from "react-router"
 import { styled } from "@mui/material/styles"
 
 export default styled(({ setExpanded, ...others }) => (

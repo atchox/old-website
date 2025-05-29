@@ -5,7 +5,7 @@ import List from "@mui/material/List"
 import ListItem from "@mui/material/ListItem"
 import Link from "@mui/material/Link"
 import { styled } from "@mui/material/styles"
-import { Link as RouterLink } from "react-router-dom"
+import { Link as RouterLink } from "react-router"
 
 export default function Courses() {
 	return (

@@ -1,4 +1,4 @@
-import { Link as RouterLink } from "react-router-dom"
+import { Link as RouterLink } from "react-router"
 import Box from "@mui/material/Box"
 import DefTooltip from "@mui/material/Tooltip"
 import Link from "@mui/material/Link"

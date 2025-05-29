@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react"
-import { createBrowserRouter, ScrollRestoration, RouterProvider, Routes, Route } from "react-router-dom"
+import { createBrowserRouter, ScrollRestoration, RouterProvider, Routes, Route } from "react-router"
 import Footer from "./components/footer"
 import Nav from "./components/nav"
 import PreLoader from "./components/preloader"
